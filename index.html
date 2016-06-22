@@ -109,7 +109,7 @@ cursorMoved = true
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/2 如何实现跳出括号/" data-id="cipqlgljl0001aq42m1mv4qvr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/2 如何实现跳出括号/" data-id="cipqlls4x0001dn42paytd90x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,20 +150,18 @@ cursorMoved = true
 </code></pre><p>经过一番搜索，找到了问题，第二天成功。</p>
 <p><strong>原因：很可能是因为设置了密码</strong>，</p>
 <p>1.因此用</p>
-<pre><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
-</code></pre><p>这样安装，也会显示安装成功，但是并不能用。</p>
+<p><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash</code></p>
+<p>这样安装，也会显示安装成功，但是并不能用。</p>
 <p>2.改用sudo</p>
-<pre><code>sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
-</code></pre><p>需要输入密码，然后执行成功。</p>
+<p><code>sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash</code></p>
+<p>需要输入密码，然后执行成功。</p>
 <p>3.再添加nvm环境变量，依次执行</p>
-<pre><code>export NVM_DIR=&quot;$HOME/.nvm&quot;
-[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
-</code></pre><p>4.检查是否安装成功</p>
-<pre><code>command -v nvm
-</code></pre><p>显示</p>
-<blockquote>
-<p>nvm</p>
-</blockquote>
+<p><code>export NVM_DIR=&quot;$HOME/.nvm&quot;
+    [ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm</code></p>
+<p>4.检查是否安装成功</p>
+<p><code>command -v nvm</code></p>
+<p>显示</p>
+<p><code>nvm</code></p>
 <p>这样，就可以进行后面的工作了。</p>
 <hr>
 <p>2016.6.17</p>
@@ -171,7 +169,7 @@ cursorMoved = true
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/1 如何在Mac OS X中安装nvm/" data-id="cipqlgljf0000aq42g5ukn9y5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/1 如何在Mac OS X中安装nvm/" data-id="cipqlls4q0000dn42dorpjro4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -217,7 +215,7 @@ cursorMoved = true
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/3 如何把nvm的环境变量添加到.bash_profile中/" data-id="cipqlgljp0002aq42g1fp5b0e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/3 如何把nvm的环境变量添加到.bash_profile中/" data-id="cipqlls510002dn42jgs8dvz9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -254,7 +252,7 @@ cursorMoved = true
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipqlgljr0003aq42gu4ymblc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hello-world/" data-id="cipqlls530003dn42mpb1dglm" class="article-share-link">Share</a>
       
       
     </footer>
