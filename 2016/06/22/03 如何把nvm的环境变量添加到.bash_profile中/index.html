@@ -3,33 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>03如何把nvm的环境变量添加到.bash_profile中 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 03如何把nvm的环境变量添加到.bash_profile中
-如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
+  <meta name="description" content="如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
 主要原因：没有将nvm环境变量放到.bash_profile中结果就是每次打开nvm都要重新设置一下环境变量
 解决方法：
 
-在用Finder中找~/.bash_profile（需要">
+在用Finder中找~/.bash_profile（需要打开隐藏文件）
+用atom或者 textedit打开，将环境变量代码添加到最">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="03如何把nvm的环境变量添加到.bash_profile中">
 <meta property="og:url" content="http://yoursite.com/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 03如何把nvm的环境变量添加到.bash_profile中
-如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
+<meta property="og:description" content="如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
 主要原因：没有将nvm环境变量放到.bash_profile中结果就是每次打开nvm都要重新设置一下环境变量
 解决方法：
 
-在用Finder中找~/.bash_profile（需要">
-<meta property="og:updated_time" content="2016-06-22T07:36:20.000Z">
+在用Finder中找~/.bash_profile（需要打开隐藏文件）
+用atom或者 textedit打开，将环境变量代码添加到最">
+<meta property="og:updated_time" content="2016-06-22T07:39:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title: 03如何把nvm的环境变量添加到.bash_profile中
-如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
+<meta name="twitter:title" content="03如何把nvm的环境变量添加到.bash_profile中">
+<meta name="twitter:description" content="如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
 主要原因：没有将nvm环境变量放到.bash_profile中结果就是每次打开nvm都要重新设置一下环境变量
 解决方法：
 
-在用Finder中找~/.bash_profile（需要">
+在用Finder中找~/.bash_profile（需要打开隐藏文件）
+用atom或者 textedit打开，将环境变量代码添加到最">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -88,15 +88,24 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      03如何把nvm的环境变量添加到.bash_profile中
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title: 03如何把nvm的环境变量添加到.bash_profile中</p>
-<h1 id="如何把nvm的环境变量添加到-bash-profile中"><a href="#如何把nvm的环境变量添加到-bash-profile中" class="headerlink" title="如何把nvm的环境变量添加到.bash_profile中"></a>如何把nvm的环境变量添加到.bash_profile中</h1><p>上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！</p>
+        <h1 id="如何把nvm的环境变量添加到-bash-profile中"><a href="#如何把nvm的环境变量添加到-bash-profile中" class="headerlink" title="如何把nvm的环境变量添加到.bash_profile中"></a>如何把nvm的环境变量添加到.bash_profile中</h1><p>上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！</p>
 <p><strong>主要原因：没有将nvm环境变量放到.bash_profile中</strong><br>结果就是每次打开nvm都要重新设置一下环境变量</p>
 <p>解决方法：</p>
 <ol>
 <li>在用Finder中找~/.bash_profile（需要打开隐藏文件）</li>
-<li><p>用atom或者 textedit打开，将环境变量代码添加到最后即可。<br>export NVM_DIR=”$HOME/.nvm”<br>[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh” # This loads nvm</p>
+<li><p>用atom或者 textedit打开，将环境变量代码添加到最后即可。<br><code>export NVM_DIR=&quot;$HOME/.nvm&quot;</code>[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh” # This loads nvm</p>
 </li>
 <li><p>重新打开terminal.</p>
 </li>
@@ -105,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/" data-id="cipqkgetx0001rl42h9nutgyl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/" data-id="cipqkkq6n0000tw42lf9oz3hj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,7 +163,7 @@
       <ul>
         
           <li>
-            <a href="/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/">(no title)</a>
+            <a href="/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/">03如何把nvm的环境变量添加到.bash_profile中</a>
           </li>
         
           <li>
