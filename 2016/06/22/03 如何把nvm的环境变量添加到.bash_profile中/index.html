@@ -21,7 +21,7 @@
 
 在用Finder中找~/.bash_profile（需要打开隐藏文件）
 用atom或者 textedit打开，将环境变量代码添加到最">
-<meta property="og:updated_time" content="2016-06-22T07:40:33.000Z">
+<meta property="og:updated_time" content="2016-06-22T07:41:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="03如何把nvm的环境变量添加到.bash_profile中">
 <meta name="twitter:description" content="如何把nvm的环境变量添加到.bash_profile中上次成功安装了nvm，附带着就有了npm，但是每次打开terminal都要重新安装！！
@@ -67,9 +67,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -105,16 +105,17 @@
 <p>解决方法：</p>
 <ol>
 <li>在用Finder中找~/.bash_profile（需要打开隐藏文件）</li>
-<li><p>用atom或者 textedit打开，将环境变量代码添加到最后即可。<br><code>export NVM_DIR=&quot;$HOME/.nvm&quot;</code>[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh” # This loads nvm</p>
-</li>
-<li><p>重新打开terminal.</p>
-</li>
+<li>用atom或者 textedit打开，将环境变量代码添加到最后即可。<br>`export NVM_DIR=”$HOME/.nvm”</li>
+</ol>
+<p>`[ -s “$NVM_DIR/nvm.sh” ] &amp;&amp; . “$NVM_DIR/nvm.sh” # This loads nvm</p>
+<ol>
+<li>重新打开terminal.</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/" data-id="cipqklsc50000uu42zpnq75wm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/03 如何把nvm的环境变量添加到.bash_profile中/" data-id="cipqkn8r10000vy427tgoy1sa" class="article-share-link">Поделиться</a>
       
       
     </footer>
@@ -125,7 +126,7 @@
   
   
     <a href="/2016/06/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Предыдущий</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -148,7 +149,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Архив</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
     </div>
@@ -158,7 +159,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Недавние записи</h3>
     <div class="widget">
       <ul>
         
@@ -183,7 +184,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
