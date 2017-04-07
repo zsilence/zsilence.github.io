@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>张召的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="认识自己，改变自己">
+<meta property="og:type" content="website">
+<meta property="og:title" content="张召的个人博客">
+<meta property="og:url" content="http://zsilence.github.io/page/4/index.html">
+<meta property="og:site_name" content="张召的个人博客">
+<meta property="og:description" content="认识自己，改变自己">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="张召的个人博客">
+<meta name="twitter:description" content="认识自己，改变自己">
+  
+    <link rel="alternate" href="/atom.xml" title="张召的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">张召的个人博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记录成长</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://zsilence.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/18/2/" class="article-date">
+  <time datetime="2016-06-18T00:50:01.000Z" itemprop="datePublished">2016-06-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/18/2/">2 如何实现跳出括号</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="如何实现跳出括号"><a href="#如何实现跳出括号" class="headerlink" title="如何实现跳出括号"></a>如何实现跳出括号</h1><p>学习编程第二天，今天又遇到了一点小麻烦。<br>在自定义快捷键的时候出现了问题，按照李笑来老师的教程来做的，但是无法实现“enter”之后跳出括号的操作。</p>
+<p><strong>原因：他提供的代码缺少了一句！</strong></p>
+<ol>
+<li><p>首先编辑init script</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> # move cursor across the ending symbols...</span><br><span class="line">EndingSymbolRegex = /\s*[)&#125;&gt;\]/&apos;&quot;;:=-]/</span><br><span class="line">atom.commands.add &apos;atom-text-editor&apos;, &apos;custom:jump-over-symbol&apos;: (event) -&gt;</span><br><span class="line">  editor = atom.workspace.getActiveTextEditor()</span><br><span class="line">  cursorMoved = false</span><br><span class="line">  for cursor in editor.getCursors()</span><br><span class="line">    range = cursor.getCurrentWordBufferRange(wordRegex: EndingSymbolRegex)</span><br><span class="line">    unless range.isEmpty()</span><br><span class="line">      cursor.setBufferPosition(range.end)</span><br><span class="line">      cursorMoved = true</span><br><span class="line">  event.abortKeyBinding() unless cursorMoved</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑keymap</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&apos;atom-text-editor:not([mini])&apos;:</span><br><span class="line"> &apos;ctrl-k&apos;: &apos;custom:jump-over-symbol&apos;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Reload即完成！</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zsilence.github.io/2016/06/18/2/" data-id="cj17wz2t8000qg8426r4lf33d" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/17/1/" class="article-date">
+  <time datetime="2016-06-17T00:50:01.000Z" itemprop="datePublished">2016-06-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/17/1/">1 如何在Mac OS X中安装nvm</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="如何在Mac-OS-X中安装nvm"><a href="#如何在Mac-OS-X中安装nvm" class="headerlink" title="如何在Mac OS X中安装nvm"></a>如何在Mac OS X中安装nvm</h1><p>如何在Mac OS X中安装nvm（全称：Node Version Manager），本来安装过程应该很简单，但是由于配置问题，产生了一个小问题，花了一些时间查找解决方法。</p>
+<p>安装nvm，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nvm</span><br></pre></td></tr></table></figure>
+<p>之后显示已经安装成功，但是安装nodejs还是不行，显示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-bash: nvm: command not found</span><br></pre></td></tr></table></figure>
+<p>经过一番搜索，找到了问题，第二天成功。</p>
+<p><strong>原因：很可能是因为设置了密码</strong>，</p>
+<ol>
+<li><p>因此用下面代码安装，也会显示安装成功，但是并不能用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>改用sudo，需要输入密码，然后执行成功。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>再添加nvm环境变量，依次执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=&quot;$HOME/.nvm&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查是否安装成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">command -v nvm</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>显示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm</span><br></pre></td></tr></table></figure></p>
+<p>这样，就可以进行后面的工作了。</p>
+<hr>
+<p>2016.6.17</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zsilence.github.io/2016/06/17/1/" data-id="cj17wz2s40002g8423urzlt0v" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-0" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/17/0/" class="article-date">
+  <time datetime="2016-06-16T16:50:01.000Z" itemprop="datePublished">2016-06-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/17/0/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Hello this is zz’s first website!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zsilence.github.io/2016/06/17/0/" data-id="cj17wz2rx0000g8422ucz47ux" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/page/3/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/书籍/">书籍</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/写作/">写作</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/英语/">英语</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/习惯/">习惯</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/写作/">写作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/口语/">口语</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技能/">技能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/方法/">方法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/概念/">概念</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/段子/">段子</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程/">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/英语方法/">英语方法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频/">视频</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法/">语法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读书笔记/">读书笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/资料/">资料</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动/">运动</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随想/">随想</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/习惯/" style="font-size: 10px;">习惯</a> <a href="/tags/写作/" style="font-size: 10px;">写作</a> <a href="/tags/口语/" style="font-size: 10px;">口语</a> <a href="/tags/技能/" style="font-size: 10px;">技能</a> <a href="/tags/方法/" style="font-size: 10px;">方法</a> <a href="/tags/概念/" style="font-size: 10px;">概念</a> <a href="/tags/段子/" style="font-size: 10px;">段子</a> <a href="/tags/编程/" style="font-size: 13.33px;">编程</a> <a href="/tags/英语方法/" style="font-size: 10px;">英语方法</a> <a href="/tags/视频/" style="font-size: 10px;">视频</a> <a href="/tags/语法/" style="font-size: 10px;">语法</a> <a href="/tags/读书笔记/" style="font-size: 16.67px;">读书笔记</a> <a href="/tags/资料/" style="font-size: 10px;">资料</a> <a href="/tags/转载/" style="font-size: 10px;">转载</a> <a href="/tags/运动/" style="font-size: 10px;">运动</a> <a href="/tags/随想/" style="font-size: 20px;">随想</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/19/32/">32 勤奋</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/14/31/">31 Teach Yourself Programming in Ten Years</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/18/30/">30 《别闹了，费曼先生》读书笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/16/29/">29 更自律并不等于更快乐</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/20/28/">28 享受运动快乐</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 张召<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
