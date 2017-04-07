@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -60,7 +60,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -70,7 +70,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -82,7 +82,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -105,20 +105,20 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 'undefined',
       author: '博主'
     },
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -156,7 +156,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
    page-home 
  ">
     <div class="headband"></div>
@@ -200,6 +200,26 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -285,16 +305,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-19T09:49:59+08:00">
-                2017-03-19
-              </time>
-            
 
             
 
@@ -339,49 +349,19 @@
       
         
           
-            <blockquote>
-<p>Some people have a purpose in life; others just drift.</p>
-</blockquote>
-<p>当然，从人类发展的进程来看，作为个体，每个人都只是在自己有限的范围内做着“布朗”运动。</p>
-<p>但是人与人之间确实有着很大的差别，不单单是指外表上的，更大的差别存在于脑子中的想法（Fish inhabit the sea; thoughts inhabit the mind.）。这个差别之大甚至超过人与动物之间的差别（总有一些人是不如动物的，所以不要骂人就说其是某种动物）！</p>
-<p>动物在基因里就是勤劳的，因为毫无疑问，那些不勤劳的会在进化的过程中最先被淘汰。</p>
-<p>最近，我脑子里有了一个想法，要做一个勤奋的人，而当产生了这个想法，感觉整个世界都不一样了！</p>
-<p>当我要做一个勤奋的人之后，很多事情都改变了。我不会再有没有时间的借口了，因为一个勤奋的人始终是要做各种各样的事的，只是有的事要先做，有的要后做，甚至不去做——拒绝，因为</p>
-<blockquote>
-<p>勤奋并不等于忙碌，而是积极主动地去实现自己的想法。</p>
-</blockquote>
-<p>我也不会再有无聊。我总是要找一些事来做，但是并非不去休息，甚至不会缩减睡眠时间，因为睡眠不足效率会降低。</p>
-<p>甚至，我都不需要坚持、努力、毅力了。如果做一件事需要坚持、努力、毅力，就意味着要有痛苦、难过、沮丧，尤其是当有付出，而没有得到预期的回报的时候。所以才有那些成名的歌手或演员去吸毒的事件发生，他们通过了一条充满艰辛的道路才有所成就，他们拥有了名誉与金钱，但是仍然需要更辛苦的工作，他们感到并不是当初预期的回报，他们感到痛苦、难过、沮丧，选择吸毒去发泄。而一个勤奋的人，不会咬着牙坚持做一件事，而是把一件事当作日常事务（perceived as ritual），但是在外人看来是付出了很多毅力（不知道是用大还是多）才能完成的。</p>
-<hr>
-<p>美国的国父之一——本杰明·富兰克林，是一个勤奋的人。</p>
-<blockquote>
-<p>本杰明·富兰克林，出生于美国麻省波士顿，是美国著名政治家、科学家，同时亦是出版商、印刷商、记者、作家、慈善家；更是杰出的外交家及发明家。他是美国革命时重要的领导人，参与了多项重要文件的草拟，并曾出任美国驻法国大使，成功取得法国支持美国独立，同时被视为美国国父之一。 <a href="http://zh.wikipedia.org/zh-cn/%E6%9C%AC%E5%82%91%E6%98%8E%C2%B7%E5%AF%8C%E8%98%AD%E5%85%8B%E6%9E%97" target="_blank" rel="external">维基百科</a></p>
-</blockquote>
-<p>他给自己定下了十三条戒律：</p>
-<blockquote>
-<p>一、节制。食不过饱；饮酒不醉。<br>二、沉默寡言。言必于人于己有益；避免无益的聊天。<br>三、生活秩序。每一样东西应有一定的安放的地方；每件日常事务当有一定的时间。<br>四、决心。当做必做；决心要做的事应坚持不懈。<br>五、俭朴。用钱必须于人或于己有益，换言之，切戒浪费。<br>六、勤勉。不浪费时间；每时每刻做些有用的事，戒掉一切不必要的行动。<br>七、诚恳。不欺骗人；思想要纯洁公正；说话也要如此。<br>八、公正。不做不利于人的事，不要忘记履行对人有益而又是你应尽的义务。<br>九、中庸适度。避免极端；人若给你应得处罚，你当容忍之。<br>十、清洁。身体、衣服和住所力求清洁。<br>十一、镇静。勿因小事或普通的不可避免的事故而惊慌失措。<br>十二、贞节。除了为了健康或生育后代起见，不常举行房事，切戒房事过度，伤害身体或损害你自己或他人的安宁或名誉。<br>十三、谦虚。仿效耶稣和苏格拉底</p>
-<p>——《富兰克林自传》</p>
-</blockquote>
-<p>另一位名人查理·芒格——股神巴菲特的搭档，同样是一位勤奋的人。</p>
-<blockquote>
-<ol>
-<li>不缺钱。（这一点就要耗费不少精力）</li>
-<li>热爱建筑学，设计了多个建筑。</li>
-<li>做慈善。</li>
-<li>与人约会，会提前45分钟到场，而不管是等人还是等飞机，总是在读书或报纸。</li>
-<li>积极分享自己的思想与经验。</li>
-</ol>
-</blockquote>
-<p>还有许许多多勤奋的人，他们有名或者无名，他们有钱或者没钱，这些都是外在的，而内在的脑子里的想法却是类似的，他们都在积极地实现着自己的想法，实现着自己的价值。</p>
-<blockquote>
-<h1 id="The-Road-Not-Taken"><a href="#The-Road-Not-Taken" class="headerlink" title="The Road Not Taken"></a>The Road Not Taken</h1><p>BY ROBERT FROST</p>
-<p>Two roads diverged in a yellow wood,<br>And sorry I could not travel both<br>And be one traveler, long I stood<br>And looked down one as far as I could<br>To where it bent in the undergrowth;<br>Then took the other, as just as fair<br>And having perhaps the better claim,<br>Because it was grassy and wanted wear;<br>Though as for that the passing there<br>Had worn them really about the same,<br>And both that morning equally lay<br>In leaves no step had trodden black.<br>Oh, I kept the first for another day!<br>Yet knowing how way leads on to way,<br>I doubted if I should ever come back.<br>I shall be telling this with a sigh<br>Somewhere ages and ages hence:<br>Two roads diverged in a wood, and I—<br>I took the one less traveled by,<br>And that has made all the difference.</p>
-<p><strong>未选之路</strong></p>
-<p>——关山译</p>
-<p>林中两路分，可惜难兼行。<br>游子久伫立，极目望一径。<br>蜿蜒复曲折，隐于丛林中。<br>我选另一途，合理亦公正。<br>草密人迹罕，正待人通行。<br>足迹踏过处，两路皆相同。<br>两路林中伸，落叶无人踪。<br>我选一路走，深知路无穷。<br>我疑从今后，能否转回程。<br>数十年之后，谈起常叹息。<br>林中两路分，一路人迹稀。<br>我独选此路，境遇乃相异。</p>
-</blockquote>
-
           
+Some people have a purpose in life; others just drift.
+
+当然，从人类发展的进程来看，作为个体，每个人都只是在自己有限的范围内做着“布朗”运动。
+但是人与人之间确实有着很大的差别，不单单是指外表上的，更大的差别存在于脑子中的想法（Fish in
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/19/32/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -456,16 +436,6 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T21:13:23+08:00">
-                2017-03-14
-              </time>
-            
 
             
 
@@ -510,83 +480,21 @@
       
         
           
-            <p>勤奋并不是忙碌，而是用积极地用行动实现自己的想法。<br>做一个勤奋的人！</p>
-<p>转载于：<a href="http://norvig.com/21-days.html#answers" target="_blank" rel="external">http://norvig.com/21-days.html#answers</a></p>
-<p><html></html></p>
-<p><head></head></p>
-<p><title>Teach Yourself Programming in Ten Years</title><br><!-- Changed by: Peter Norvig, 13-Jul-1998 --></p>
-<p><center></center></p>
-<p></p><h1>Teach Yourself Programming in Ten Years</h1><p></p>
-<p></p><h3>Peter Norvig</h3><br><p></p>
-<p>
-
-<table cellpadding="4"><br><tr><br><td><br><br><h2>Why is everyone in such a rush?</h2><br><br>Walk into any bookstore, and you’ll see how to <i>Teach Yourself Java<br>in 24 Hours</i> alongside endless variations offering to teach C,<br>SQL, Ruby, Algorithms, and so on in a few days or hours.<br>The Amazon advanced search for [<a href="http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&unfiltered=1&field-keywords=&field-author=&field-title=teach+yourself+hours&field-isbn=&field-publisher=&node=&field-p_n_condition-type=&field-feature_browse-bin=&field-subject=&field-language=&field-dateop=After&field-datemod=&field-dateyear=2000&sort=relevanceexprank&Adv-Srch-Books-Submit.x=16&Adv-Srch-Books-Submit.y=5" target="_blank" rel="external">title: teach,<br>yourself, hours, since: 2000</a> and found 512 such books. Of the top ten, nine are programming books (the other is about bookkeeping). Similar results come from replacing “teach yourself” with “learn” or “hours” with “days.”<br><br><br><p>The conclusion is that either people are in a big rush to learn<br>about programming, or that programming is somehow fabulously easier to<br>learn than anything else.<br>Felleisen <i>et al.</i><br>give a nod to this trend in their book <i><a href="http://www.ccs.neu.edu/home/matthias/HtDP2e/index.html" target="_blank" rel="external">How to Design Programs</a></i>, when they say<br>“Bad programming is easy. <i>Idiots</i> can learn it in <i>21 days</i>,<br>even if they are <i>dummies</i>.” The Abtruse Goose comic also had <a href="http://abstrusegoose.com/249" target="_blank" rel="external">their take</a>.<br><br></p><p>Let’s analyze what a title like <i><a href="http://www.amazon.com/Sams-Teach-Yourself-Hours-5th/dp/0672333317/ref=sr_1_6?s=books&ie=UTF8&qid=1412708443&sr=1-6&keywords=learn+c%2B%2B+days" target="_blank" rel="external">Teach Yourself C++ in 24 Hours</a></i><br>could mean:<br><ul><br><br><li><b>Teach Yourself:</b> In 24 hours you won’t have time to write several<br>significant programs, and learn from your successes and failures with<br>them.  You won’t have time to work with an experienced programmer and<br>understand what it is like to live in a C++ environment.  In short, you<br>won’t have time to learn much.  So the book can only be talking about a<br>superficial familiarity, not a deep understanding. As Alexander Pope said,<br>a little learning is a dangerous thing.<p><br><br><li><b>C++:</b> In 24 hours you might be able to learn some of the syntax of<br>C++ (if you already know another language), but you couldn’t<br>learn much about how to use the language.  In short, if you were, say, a<br>Basic programmer, you could learn to write programs in the style of<br>Basic using C++ syntax, but you couldn’t learn what C++ is<br>actually good (and bad) for.  So what’s the point?  <a href="a
-href=&quot;http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html&quot;">a
-href=&quot;http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html&quot;</a>Alan<br>Perlis once said: “A language that doesn’t affect the way you<br>think about programming, is not worth knowing”.  One possible point is<br>that you have to learn a tiny bit of C++ (or more likely, something<br>like JavaScript or Processing) because you need to interface with an<br>existing tool to accomplish a specific task. But then you’re not<br>learning how to program; you’re learning to accomplish that task.<p><br><br><li><b>in 24 Hours:</b> Unfortunately, this is not enough, as the next<br>section shows.<br></li></p></li></p></li></ul><br><br></p><h2>Teach Yourself Programming in Ten Years</h2><br><br>Researchers (<a href="a
-href=&quot;http://www.amazon.com/exec/obidos/ASIN/034531509X/&quot;">a
-href=&quot;http://www.amazon.com/exec/obidos/ASIN/034531509X/&quot;</a>Bloom<br>(1985), <a href="#bh">Bryan &amp; Harter (1899)</a>, <a href="a
-href=&quot;http://www.amazon.com/exec/obidos/ASIN/0805803092&quot;">a
-href=&quot;http://www.amazon.com/exec/obidos/ASIN/0805803092&quot;</a>Hayes<br>(1989), <a href="#sc">Simmon &amp; Chase (1973)</a>) have shown it<br>takes about ten years to develop expertise in any of a wide variety of<br>areas, including chess playing, music composition, telegraph<br>operation, painting, piano playing, swimming, tennis, and research in<br>neuropsychology and topology.  The key is <i>deliberative</i><br>practice: not just doing it again and again, but challenging yourself<br>with a task that is just beyond your current ability, trying it,<br>analyzing your performance while and after doing it, and correcting<br>any mistakes.  Then repeat.  And repeat again.  There appear to be no<br>real shortcuts: even Mozart, who was a musical prodigy at age 4, took<br>13 more years before he began to produce world-class music.  In<br>another genre, the Beatles seemed to burst onto the scene with a<br>string of #1 hits and an appearance on the Ed Sullivan show in 1964.<br>But they had been playing small clubs in Liverpool and Hamburg since<br>1957, and while they had mass appeal early on, their first great<br>critical success, <i>Sgt. Peppers</i>, was released in 1967.<br><br><p><a href="http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017922" target="_blank" rel="external">Malcolm<br>Gladwell</a> has popularized the idea, although he concentrates on 10,000 hours, not 10 years.<br>Henri Cartier-Bresson (1908-2004) had another metric: “Your first 10,000 photographs are your  worst.” (He didn’t<br>anticipate that with digital cameras, some people can reach that mark in a week.)<br>True expertise may take a lifetime:<br>Samuel Johnson (1709-1784) said “Excellence in any department can be<br>attained only by the labor of a lifetime; it is not to be purchased at<br>a lesser price.”  And Chaucer (1340-1400) complained “the lyf so short, the craft<br>so long to lerne.” Hippocrates (c. 400BC) is known for the excerpt “ars longa,<br>vita brevis”, which is part of the longer quotation “Ars longa, vita<br>brevis, occasio praeceps, experimentum periculosum, iudicium<br>difficile”, which in English renders as “Life is short, [the] craft<br>long, opportunity fleeting, experiment treacherous, judgment<br>difficult.”<br><!--Although in Latin, <i>ars</i> can mean either art or
-craft, in the original Greek the word "techne" can only mean "skill", not "art". --><br>Of course, no single number can be the final answer: it doesn’t seem reasonable<br>to assume that all skills (e.g., programming, chess playing, checkers playing, and music playing)<br>could all require exactly the same amount of time to master, nor that all people<br>will take exactly the same amount of time. As<br>Prof. <a href="http://www.amazon.com/K.-Anders-Ericsson/e/B000APB8AQ/ref=dp_byline_cont_book_1" target="_blank" rel="external"><br>K. Anders Ericsson</a> puts it, “In most domains it’s remarkable how much time even the most<br>talented individuals need in order to reach the highest levels of performance. The 10,000 hour number just gives you a sense that we’re talking years of 10 to 20 hours a week which those who some people would argue are the most innately talented individuals still need to get to the highest level.”<br><br></p><h2>So You Want to be a Programmer</h2><br><p><br>Here’s my recipe for programming success:<br><ul><br><br><li> Get <b>interested</b> in programming, and do some because it is fun.  Make sure<br>that it keeps being enough fun so that you will be willing to put in your ten years/10,000 hours.<p><br><br><li> <b>Program</b>.  The best kind of learning is <a href="a
-href=&quot;http://www.engines4ed.org/hyperbook/nodes/NODE-120-pg.html&quot;">a
-href=&quot;http://www.engines4ed.org/hyperbook/nodes/NODE-120-pg.html&quot;</a>learning<br>by doing.  To put it more technically, “the maximal level of<br>performance for individuals in a given domain is not attained<br>automatically as a function of extended experience, but the level of<br>performance can be increased even by highly experienced individuals as<br>a result of deliberate efforts to improve.” <a href="a
-href=&quot;http://www2.umassd.edu/swpi/DesignInCS/expertise.html&quot;">a
-href=&quot;http://www2.umassd.edu/swpi/DesignInCS/expertise.html&quot;</a>(p. 366)<br>and “the most effective learning requires a well-defined task with an<br>appropriate difficulty level for the particular individual,<br>informative feedback, and opportunities for repetition and corrections<br>of errors.” (p. 20-21)  The book <i><br><a href="http://www.amazon.com/exec/obidos/ASIN/0521357349" target="_blank" rel="external">Cognition in Practice: Mind, Mathematics, and Culture in Everyday<br>Life</a></i> is an interesting<br>reference for this viewpoint.<p><br><br><li> <b>Talk with</b> other programmers; read other programs.  This is more important<br>than any book or training course.<p><br><br><br><li> If you want, put in four years at a <b>college</b> (or more at a<br>graduate school).  This will give you access to some jobs that require<br>credentials, and it will give you a deeper understanding of the field,<br>but if you don’t enjoy school, you can (with some dedication) get<br>similar experience on your own or on the job. In any case, book learning alone won’t<br>be enough. “Computer science education cannot make anybody an expert<br>programmer any more than studying brushes and pigment can make<br>somebody an expert painter” says Eric Raymond, author of <i>The New<br>Hacker’s Dictionary</i>. One of the best programmers I ever hired had<br>only a High School degree; he’s produced a lot of <a href="A
-HREF=&quot;http://www.xemacs.org&quot;">A
-HREF=&quot;http://www.xemacs.org&quot;</a>great <a href="A
-HREF=&quot;http://www.mozilla.org&quot;">A
-HREF=&quot;http://www.mozilla.org&quot;</a>software, has his own <a href="a
-href=&quot;http://groups.google.com/groups?q=alt.fan.jwz&amp;meta=site%3Dgroups&quot;">a
-href=&quot;http://groups.google.com/groups?q=alt.fan.jwz&amp;meta=site%3Dgroups&quot;</a>news group, and made enough in stock options to buy his own <a href="http://en.wikipedia.org/wiki/DNA_Lounge" target="_blank" rel="external">nightclub</a>.<p><br><br><li> Work on <b>projects with</b> other programmers. Be the best programmer<br>on some projects; be the worst on some others.  When you’re the best,<br>you get to test your abilities to lead a project, and to inspire<br>others with your vision.  When you’re the worst, you learn what the<br>masters do, and you learn what they don’t like to do (because they<br>make you do it for them).<p><br><br><li> Work on <b>projects <i>after</i></b> other programmers.<br>Understand a program written by someone else. See what it takes to<br>understand and fix it when the original programmers are not<br>around. Think about how to design your programs to make it easier for<br>those who will maintain them after you.<p><br><br><li> Learn at least a half dozen <b>programming languages</b>.  Include one<br>language that emphasizes class abstractions (like Java or C++), one that<br>emphasizes functional abstraction (like Lisp or ML or Haskell), one<br>that supports syntactic abstraction (like Lisp), one<br>that supports declarative specifications (like Prolog or C++<br>templates), and<br>one that emphasizes parallelism (like Clojure or Go).  <p><br><br><li> Remember that there is a “<b>computer</b>“ in “computer science”. Know<br>how long it takes your computer to execute an instruction, fetch a<br>word from memory (with and without a cache miss), read consecutive words from disk, and seek to a new location on disk. (<a href="#answers">Answers here.</a>) <p><br><br><li> Get involved in a language<br><b>standardization</b> effort.  It could be the ANSI C++ committee, or it<br>could be deciding if your local coding style will have 2 or 4 space<br>indentation levels.  Either way, you learn about what other people<br>like in a language, how deeply they feel so, and perhaps even a little<br>about why they feel so.<p><br><br><li> Have the good sense to <b>get off</b> the language standardization effort as<br>quickly as possible.<br></li></p></li></p></li></p></li></p></li></p></li></p></li></p></li></p></li></p></li></ul><br><br>With all that in mind, its questionable how far you can get just by<br>book learning.  Before my first child was born, I read all the <i>How<br>To</i> books, and still felt like a clueless novice.  30 Months later,<br>when my second child was due, did I go back to the books for a<br>refresher? No.  Instead, I relied on my personal experience, which<br>turned out to be far more useful  and reassuring<br>to me than the thousands of pages written<br>by experts.<br><br></p><p>Fred Brooks, in his essay <i><a href="http://en.wikipedia.org/wiki/No_Silver_Bullet" target="_blank" rel="external">No Silver Bullet</a></i><br>identified a three-part plan for finding great<br>software designers:<br><br><ol><br>   <li>Systematically identify top designers as early as possible.<p><br>   <li>Assign a career mentor to be responsible for the development of the prospect and carefully keep a career file.<p><br>   <li>Provide opportunities for growing designers to interact and stimulate each other.<p><br></p></li></p></li></p></li></ol><br><br>This assumes that some people already have the qualities necessary for<br>being a great designer; the job is to properly coax them along.  <a href="a
-href=&quot;http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html&quot;">a
-href=&quot;http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html&quot;</a>Alan<br>Perlis put it more succinctly: “Everyone can be taught to sculpt:<br>Michelangelo would have had to be taught how not to. So it is with the<br>great programmers”.  Perlis is saying that the greats have some<br>internal quality that transcends their training.  But where does the<br>quality come from?  Is it innate?  Or do they develop it through<br>diligence?  As Auguste Gusteau (the fictional chef in<br><i>Ratatouille</i>) puts it, “anyone can cook, but only the fearless<br>can be great.”  I think of it more as willingness to devote a large<br>portion of one’s life to deliberative practice.  But maybe<br><i>fearless</i> is a way to summarize that. Or, as Gusteau’s critic,<br>Anton Ego, says: “Not everyone can become a great artist, but a great<br>artist can come from anywhere.”<br><br></p><p><br>So go ahead and buy that Java/Ruby/Javascript/PHP book; you’ll<br>probably get some use out of it.  But you won’t change your life, or<br>your real overall expertise as a programmer in 24 hours or 21 days.<br>How about working hard to continually improve over 24 months?<br>Well, now you’re starting to get somewhere…<br></p><p><br><br><hr><br></p><h2>References</h2><br><br><p><br>Bloom, Benjamin (ed.) <i><a href="http://www.amazon.com/exec/obidos/ASIN/034531509X" target="_blank" rel="external">Developing Talent in Young People</a></i>, Ballantine, 1985.<br><br></p><p><br>Brooks, Fred, <i><a href="http://citeseer.nj.nec.com/context/7718/0" target="_blank" rel="external">No Silver Bullets</a></i>, IEEE Computer, vol. 20, no. 4, 1987, p. 10-19.<br><br></p><p><br><a name="bh">Bryan, W.L. &amp; Harter, N. “Studies on the telegraphic language:<br>The acquisition of a hierarchy of habits. <i>Psychology Review</i>,<br>1899, 8, 345-375</a><br></p><p><br>Hayes, John R., <i><a href="http://www.amazon.com/exec/obidos/ASIN/0805803092" target="_blank" rel="external">Complete Problem Solver</a></i> Lawrence Erlbaum, 1989.<br><br></p><p><br><a name="cs">Chase, William G. &amp; Simon, Herbert A.<br><a href="http://books.google.com/books?id=dYPSHAAACAAJ&dq=%22perception+in+chess%22+simon&ei=z4PyR5iIAZnmtQPbyLyuDQ" target="_blank" rel="external">“Perception in Chess”</a><br><i>Cognitive Psychology</i>, 1973, 4, 55-81.</a><br></p><p><br>Lave, Jean, <i><a href="http://www.amazon.com/exec/obidos/ASIN/0521357349" target="_blank" rel="external">Cognition in Practice: Mind, Mathematics, and Culture in Everyday<br>Life</a></i>, Cambridge University Press, 1988.<br><br><hr><br><a name="answers"><h2>Answers</h2></a><br><br>Approximate timing for various operations on a typical PC:</p><p><br><table border="1" cellpadding="2" cellspacing="2"><br><tr><td>execute typical instruction</td><td align="right"> 1/1,000,000,000 sec = 1 nanosec<br></td></tr><tr><td>fetch from L1 cache memory</td><td align="right"> 0.5 nanosec<br></td></tr><tr><td>branch misprediction</td><td align="right"> 5 nanosec<br></td></tr><tr><td>fetch from L2 cache memory</td><td align="right"> 7 nanosec<br></td></tr><tr><td>Mutex lock/unlock</td><td align="right"> 25 nanosec<br></td></tr><tr><td>fetch from main memory</td><td align="right"> 100 nanosec<br></td></tr><tr><td>send 2K bytes over 1Gbps network</td><td align="right"> 20,000 nanosec<br></td></tr><tr><td>read 1MB sequentially from memory</td><td align="right"> 250,000 nanosec<br></td></tr><tr><td>fetch from new disk location (seek)</td><td align="right"> 8,000,000 nanosec<br></td></tr><tr><td>read 1MB sequentially from disk</td><td align="right"> 20,000,000 nanosec<br></td></tr><tr><td>send packet US to Europe and back</td><td align="right"> 150 milliseconds = 150,000,000 nanosec<br></td></tr></table>
+          勤奋并不是忙碌，而是用积极地用行动实现自己的想法。做一个勤奋的人！
+转载于：http://norvig.com/21-days.html#answers
 
 
-</p><p><hr></p>
-<h2>Appendix: Language Choice</h2>
+Teach Yourself Programming in Ten Years
 
-<p>Several people have asked what programming language they should learn first.<br>There is no one answer, but consider these points:</p>
-<p></p><p></p>
-<ul><br><br><li><i>Use your friends</i>. When asked “what operating system should<br>I use, Windows, Unix, or Mac?”, my answer is usually: “use whatever<br>your friends use.”  The advantage you get from learning from your<br>friends will offset any intrinsic difference between OS, or<br>between programming languages.  Also consider your future friends:<br>the community of programmers that you will be a part of if you<br>continue.  Does your chosen language have a large growing community<br>or a small dying one?  Are there books, web sites, and online forums<br>to get answers from?  Do you like the people in those forums?<br><br></li><li><i>Keep it simple</i>.  Programming languages such as C++<br>and Java are designed for professional development by large teams of<br>experienced programmers who are concerned about the run-time efficiency of<br>their code.<br>As a result, these languages have complicated parts designed for these circumstances.<br>You’re concerned with learning to program.  You don’t need that complication.<br>You want a language that was designed to be easy to learn and remember by a<br>single new programmer.<br><br></li><li><i>Play.</i> Which way would you rather learn to play the piano: the<br>normal, interactive way, in which you hear each note as soon as you hit a key,<br>or “batch” mode, in which you only hear the notes after you finish a whole song?<br>Clearly, interactive mode makes learning easier for the piano, and also for<br>programming. Insist on a language with an interactive mode and use it.<br><br></li></ul>
-
-<p>Given these criteria, my recommendations for a first programming<br>language would be <b><a href="http://python.org" target="_blank" rel="external">Python</a></b> or<br><b><a href="http://www.schemers.org" target="_blank" rel="external">Scheme</a></b>.<br>Another choice is Javascript, not because it is perfectly well-designed for beginners,<br>but because there are so many online tutorials for it, such as<br><a href="https://www.khanacademy.org/computing/cs/programming" target="_blank" rel="external">Khan Academy’s tutorial</a>.<br>But your<br>circumstances may vary, and there are other good choices. If your<br>age is a single-digit, you might prefer<br><a href="http://alice.org" target="_blank" rel="external">Alice</a> or <a href="http://www.squeak.org/" target="_blank" rel="external">Squeak</a><br>or <a href="https://blockly-demo.appspot.com/static/apps/index.html" target="_blank" rel="external">Blockly</a> (older learners might also enjoy these). The important<br>thing is that you choose and get started.</p>
-<hr>
-
-<h2>Appendix: Books and Other Resources</h2>
-
-
-<p>Several people have asked what books and web pages they should learn<br>from.  I repeat that “book learning alone won’t be enough” but I can<br>recommend the following:</p>
-<p></p><p></p>
-<ul><br><li> <b>Scheme:</b> <a href="a
-href=&quot;http://www.amazon.com/gp/product/0262011530&quot;">a
-href=&quot;http://www.amazon.com/gp/product/0262011530&quot;</a>Structure and<br>Interpretation of Computer Programs (Abelson &amp; Sussman) is<br>probably the best introduction to computer science, and it does<br>teach programming as a way of understanding the computer science.<br>You can see <a href="http://www.swiss.ai.mit.edu/classes/6.001/abelson-sussman-lectures/" target="_blank" rel="external">online videos of lectures</a> on this book, as well as the <a href="http://mitpress.mit.edu/sicp/full-text/book/book.html" target="_blank" rel="external">complete text online</a>. The book is<br>challenging and will weed out some people who perhaps could be<br>successful with another approach.<br><br></li><li> <b>Scheme:</b><br><a href="http://www.amazon.com/gp/product/0262062186" target="_blank" rel="external">How to<br>Design Programs (Felleisen <i>et al.</i>)</a> is one of the best books<br>on how to actually design programs in an elegant and functional way.<br><br></li><li> <b>Python:</b><br><a href="http://www.amazon.com/gp/product/1887902996" target="_blank" rel="external">Python Programming:<br>An Intro to CS (Zelle)</a> is a good introduction using Python.<br><br></li><li> <b>Python:</b> Several<br>online <a href="http://wiki.python.org/moin/BeginnersGuide" target="_blank" rel="external">tutorials</a><br> are available at <a href="http://python.org" target="_blank" rel="external">Python.org</a>.<br><br></li><li> <b>Oz:</b> <a href="http://www.amazon.com/gp/product/0262220695" target="_blank" rel="external">Concepts,<br>Techniques, and Models of Computer Programming (Van Roy &amp; Haridi)</a><br>is seen by some as the modern-day successor to Abelson &amp; Sussman.<br>It is a tour through the big ideas of programming, covering a wider<br>range than Abelson &amp; Sussman while being perhaps easier to read and<br>follow.  It uses a language, Oz, that is not widely known but serves as<br>a basis for learning other languages.<br><br>&lt;<br></li></ul>
-
-<p>
-
-
-</p><p><hr></p>
-<p></p><h2>Notes</h2><br>T. Capey points out that the <a href="http://www.amazon.com/exec/obidos/ASIN/0805803092" target="_blank" rel="external">Complete<br>  Problem Solver</a> page on Amazon now has the “Teach Yourself<br>  Bengali in 21 days” and “Teach Yourself Grammar and Style” books under the<br>  “Customers who shopped for this item also shopped for these items”<br>  section.  I guess that a large portion of the people who look at that<br>  book are coming from this page.<br>Thanks to Ross Cohen for help with Hippocrates.<br></td></tr></table></p>
-<p><td><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></p>
-<td valign="top" bgcolor="#eeeeee">
-
-
-
-<script type="text/javascript">
-//<[CDATA[
-(function() {
-links = document.getElementsByTagName('a');
-query = '?';
-for(var i = 0; i < links.length; i++) {
-if(links[i].href.indexOf('#disqus_thread') >= 0) {
-query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-}
-}
-document.write('<script type="text/javascript" src="http://disqus.com/forums/norvig/get_num_replies.js' + query + '"></' + 'script>');
-})();
-//]]>
-</script>
-</td>
-          
+Teach Yourself Programming in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/14/31/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -661,44 +569,12 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-18T15:09:37+08:00">
-                2017-02-18
-              </time>
-            
 
             
 
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/书籍/" itemprop="url" rel="index">
-                    <span itemprop="name">书籍</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -737,83 +613,17 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>豆瓣：《<a href="https://book.douban.com/subject/1037602/" target="_blank" rel="external">别闹了，费曼先生</a>》</p>
-<blockquote>
-<p>理查德・曼（Richard P.Feyrman）1918年出生，1939年于麻省理工学院毕业后，进入普林斯顿大学研究院，又加入罗拉拉摩斯实验室，对原子弹的发展贡献卓著。1956年与薛温格和朝永振一郎共获诺贝尔物理奖。1988年2月困患癌症辞世。费曼的思想如天马行空，喜自辟蹊径，且从不固执，求知欲极强。他很爱恶作剧，但往往只为点出世间许多荒谬之处。确如《洛杉矶时报》所说的，“任何读这本书而不大笑出声的人，心理一定有毛病。”——豆瓣</p>
-</blockquote>
-<p>费曼，纽约曼哈顿人，诺贝尔物理奖获得者。</p>
-<p>小时候爱玩电，装得了灯泡，修得了收音机，是个猜迷高手，到只听前面的描述就知道迷题结果。自创数学符号，外加各种小发明，比如切菜机，做化学实验。</p>
-<p>爱出风头，也爱捉弄人。当兵期间，乱开各种保险柜。通过记一些数学，快速计算出别人认为不可能做到的速算。</p>
-<p>不善交际，虚心向夜店老板学习勾搭方法。</p>
-<p>会自找乐趣，想弄清楚真实世界是怎么回事。认真观察过蚂蚁习性，也尝试过像狗一样靠嗅觉辨物。</p>
-<p>讲求学以致用，喜欢类比。对巴西教育（中国教育也相当）很不认同。</p>
-<blockquote>
-<p>后来透过一些渠道，知道外交部有些人的反应是：“这显示出，送这样天真的人去巴西是多么的危险。这个笨蛋只会给我们添麻烦，他根本不了解其中的问题。”刚好相反！我觉得外交部这位仁兄才真够天真：就因为他看到大学里开了一大堆课、也有种种说明，就以为看到了真相！</p>
-</blockquote>
-<p>对学习有着极大的热情，学习桑巴舞、葡萄牙语、日语和绘画，还研究玛雅文字。不喜欢因为诺奖而被人特殊对待。</p>
-<blockquote>
-<p>如果你看到一只狗单用后腿走路， 了不起的不是它走得好，而是它会那样走。——约翰逊（SamuelJohnson）</p>
-</blockquote>
-<p>一个有趣的人，也对有趣的事充满好奇，尝试产幻觉，且成功发现幻觉中的想法抑是幻觉，只是幻想是对的了！</p>
-<p>因此，对繁杂的官僚作风很不屑，说好只签13次名，情愿不要钱也绝不多签。</p>
-<blockquote>
-<p>你们能够找到一个地方，在那里自由自在地坚持我提到过的品德；而且不会由于要维持你在组织里的地位，或是迫于经济压力，而丧失你的品德。<br>我诚心祝福，你们能够获得这样的自由。——费曼</p>
-</blockquote>
-<hr>
-<p><strong>以下为《别闹了，费曼先生》的书摘</strong></p>
-<p>第一部　小顽童的成长-1<br>2017-01-25<br>如果有人曾经这样瞧不起你，但你立刻展现实力，通常他们的态度会来个180度的转变， 有点补偿的意味。</p>
-<p>第一部　小顽童的成长-6<br>2017-01-26<br>我倒是记得，那个晚上我睡得不怎么好，最后起来做了很多功课，证明了好几条黎曼－西塔函数（Riemann-Zeta function）。<br>2017-01-26<br>“你一定很有兴趣知道、也会觉得很好笑，现在跟你聊天的就是——金塑企业的化学研究部主任；而他当时的部下呢，总共只有一个洗瓶子的工人！”</p>
-<p>第二部　误闯普林斯顿-3<br>2017-01-28<br>他们一个接一个地起立发言，我发现这是我出生以来，第一次听到那么多关于砖的天才说法。后来，就像所有典型的哲学家一般，场面一片混乱。好笑的是，在先前那么多次的讨论中，他们从来没有问过自己，究竟像砖块这类简单物体是不是“本质物体”？更不要说电子了！</p>
-<p>第二部　误闯普林斯顿-4<br>2017-01-28<br>这时我的脸一定变成绿色了，因为维格纳还说：“不！<br>不！不用担心！不过我得先提醒你：如果罗素教授边听边打瞌睡——而他是一定会睡着的——那不表示你的报告不好，他在每个研讨会中都打瞌睡。另一方面，如果鲍立教授不停点头，好像表示赞同你说的一切，也不要得意，鲍立教授患了震颤麻痹症。”</p>
-<blockquote>
-<p>注: 朱老师也是听报告打瞌睡！！</p>
-</blockquote>
-<p>第二部　误闯普林斯顿-5<br>2017-01-29<br>我比较欣赏钢铁工人、焊工或机器房的技工。我常常觉得，那些在机器房里工作、能够制造出东西来的人，才是真正的男子汉！那就是我当年的心态。</p>
-<blockquote>
-<p>注: 还是太年轻啊啊啊！</p>
-</blockquote>
-<p>第三部　从军记-3<br>2017-02-01<br>这种场面太令我震惊了：这群人——提出一大堆想法，各自考虑不同的层面，却同时记得其他人说过些什么，到了最后，又能就哪个想法最佳，作出决定，并综合全体意见，不必什么都重复三遍！这些人实在很了不起。</p>
-<blockquote>
-<p>注: 陈年老梗？！</p>
-</blockquote>
-<p>第四部　堂堂大教授-2<br>2017-02-15<br>“当然不是，”我说，“我在水牛城一家酒吧的男厕所内跟人打架。”</p>
-<p>第四部　堂堂大教授-3<br>2017-02-15<br>开始时他还从自己腰包掏钱出来付，但很快就发觉自己快要破产！他急疯了，拼命想办法找些经费回来付这些钱。我不知道他后来是怎么把这件事摆平的！</p>
-<p>第四部　堂堂大教授-4<br>2017-02-15<br>他说，“基本原则是：那个男的想表现他的绅士风度。他不想给人不礼貌、粗鲁或吝啬的感觉。只要女的充分明白他的动机，她就可以牵着他的鼻子走。”<br>“因此，”他继续说，“无论在什么情况之下，都不要充绅士！不要太尊重她们。而且，守则第一条是，不要买东西给她们——连一包烟也不要买——一直到你已问过她要不要跟你睡，而你已确定她会，不是在骗你。”<br>2017-02-15<br>我采取的心态是：酒吧那些女孩全都是一文不值的，她们只不过想骗你买酒请她喝而已，她们不会给你任何回报；我不要对这些一文不值的女人表示绅士风度……等等，反复练习，直到变成直觉反应一样。<br>注: 什么都是讲究方法的。。<br>2017-02-15<br>因此这手法在一般女孩身上也用得着！但无论有多灵验，以后我再也没那样做了——我不喜欢那样尔虞我诈。<br>但整个经验最有趣的，是发现世界上有许多事情的运作方式，跟我从小被教导的一套，居然会有这样大的差异！</p>
-<p>第四部　堂堂大教授-5<br>2017-02-15<br>第一，他能背对数表；第二，如果我像他那样用内插法的话，所花的时间绝对要比伸手拿表和按计算机的时间长得多。我佩服得五体投地。从此以后，我也试着这样做。我背熟了几个数字的对数值，也开始注意很多事情。比方有人说，“28的平方是多少？”那么注意2的平方根是1．4，而28是1．4的20倍，因此28的平方一定接近400的两倍，即800上下。<br>2017-02-15<br>我发现：他根本不懂得怎样处理数字。有了算盘，你不必记诵一大堆的算术组合；你只需要知道怎样把小珠子推上拨下。你根本不必知道9加7等于16，而只需要记住加9时，要推一颗十位数的珠子上去， 拨一颗个位数的下来便好了。也许我们算得较慢，但我们才真正懂得数字的奥妙。</p>
-<p>第四部　堂堂大教授-6<br>2017-02-15<br>但无论怎样，葡文对我来说总是很困难的，我不断下苦功，读报纸、用葡语授课。我称我的葡语为“费曼葡语”，我有自知之明，我说的话不能跟真的葡语相比；虽然我明白自己说些什么，但我可听不懂街上的巴西人在说些什么。<br>2017-02-15<br>我有一套理论。我觉得这很像一个说法语的人来到美国，一开始时他们会犯各种错误，你也无法明白他在说些什么。他们不断练习，直到英语说得不错，你突然发现他们说话的方式，也有一种很讨人喜欢的调调——他们的外国口音很悦耳，你也很喜欢听。也许我玩的弗利吉得拉，大概也有某种“外国腔调”，因为事实上，我没法比得上这些从小就玩这乐器的人。我的大概是种笨腔调，但不管怎么样，我已经成为一个成功的弗利吉得拉手了。<br>2017-02-15<br>研究了很久以后，我才明白，原来我的学生把什么都背得很熟，但完全不理解自己在背些什么。当他们听到“从具备某个折射率的介质反射出来的光”，他们完全不晓得这就是指“水”之类的东西。他们不晓得“光的方向”<br>就是当你看着一些东西时的方向，诸如此类。因此当我问“什么是布儒斯特角”时，我就好像在向一台电脑问问题，而刚好敲对了关键字眼而已。但如果我说“看看海水”，就什么反应也没有了——在他们的记忆里头，没有“看看海水”这一条呢！<br>2017-02-15<br>我实在搞不懂他们这样能学到什么东西。这位教授在谈惯性矩，却不会讨论一下，如果一件重物挂在门边，而你要把门推开有多困难；但如果你把这件重物挂在接近门轴之处，推门便轻松得多——完全没有类似的讨论！<br>下课后，我问一个学生：“你抄了那么多笔记——接下来你会怎样处理它们？”<br>“噢，我们要好好地读，”他说：“然后考试。”<br>“怎么考法？”<br>“很容易的，我现在就可以告诉你其中一道考题。”<br>他看着笔记本说：“‘在什么情形之下两个物体是相等的？’<br>答案是，‘两物体是相等的，如果相同力矩造成同等的加速度。’”因此你瞧，他们有办法考过试，“学”会了所有的东西，但除了背下来的东西之外，什么也不会。<br>2017-02-15<br>演讲厅里全坐满了。首先我把科学定义为“对大自然现象的理解”，然后我问：“教学生科学有什么好处呢？<br>当然，如果不注重科学，这个国家就还不够文明……。”<br>他们全坐在那里点头赞同，我很清楚这正是他们的想法。<br>然后我话锋一转：“当然，这是十分荒谬的，因为，我们为什么一定非要追上另一个国家不可？我们应该是为了一个好理由、充分的理由才教授科学，而不是只因为其他国家也研究科学。”我谈到科学的应用、科学对于改进人类生活的贡献——我着实挖苦了他们一顿。<br>然后我说：“我这次演讲的主题，是要向各位证明，巴西根本没有在教科学！”他们明显地激动起来了，全都在想：“什么？没有在教科学？这话太疯狂了！我们开了一大堆科学课呢！”<br>我告诉他们，刚到巴西时，令我最震惊的是，看到小学生在书店里购买物理书。这么多巴西小孩在学物理，全都比美国小孩更早起步，结果整个巴西却没有几个物理学家，这真是令人惊讶极了——为什么会这样？这么多小孩那样的用功，结果却一点成效也没有！<br>我举例说，这好比一个深爱希腊文的希腊学者，他知道在他自己的国家里，小孩都不大爱念希腊文。但当他跑到别的国家，却发现那里的人都在研究希腊文，甚至小学生也在读，他高兴极了，但在一个主修希腊文学生的学位考试上，他问学生：“苏格拉底谈到真理和美之间的关系时，提出过什么主张？”——学生答不出来。然后学者又问：“苏格拉底在第三次对话录中跟柏拉图说过些什么？”<br>学生立刻眉飞色舞，以极优美的希腊文，一字不漏的把苏格拉底说过的话背出来。<br>可是，苏格拉底在第三次对话录里所说的，正是真理和美之间的关系呢！<br>这位希腊学者发现的是，那个国家的学生学习希腊文的方式，是首先学会字母的发音，然后是字的读法，再后来是一句及一段地学下去。他们可以把苏格拉底说过的话倒背如流，却完全不知道那些希腊字是有其意义的。对学生来说，一切都只不过是些很人工化的声音罢了。从来没有人把这些声音翻译成学生看得懂的东西。<br>我说：“当我看到你们教小孩‘科学’的方式时，我的感觉就跟那希腊学者一模一样。”（很够震撼是不是？）<br>2017-02-15<br>我念道：“摩擦发光（Triboluminescence）： 当晶体被撞击时所发的光……”<br>我说：“在这样的句子里，是否就是科学呢？不！你只不过是用一些字说出另一些字的意思而已，一点都没提到大自然——没有提到撞击什么晶体时会发光，为什么会发光。各位有没有看到过任何学生回家试做个实验？我想，他没有办法做，他根本不知道该怎样做。”<br>“但如果你写：‘当你在黑暗里拿把钳子打在一块糖上，你会看到一丝蓝色光。其他晶体也有此效应，没有人知道为什么。这个现象被称为摩擦发光。’那么就会有人回家试着这样做，那就是一次与大自然相遇的美妙经验。”<br>2017-02-15<br>最后我说，实在看不出在这种一再重复下去的体制中，谁能受到任何教育。大家都努力考试，然后教下一代如何考试，大家什么都不懂。“不过，”我说：“我一定是搞错了。在我教的班里有两个学生表现很好，另外有一位我认识的物理学家也是在巴西受教育的。因此，看来虽然制度很烂，有些人还是有办法成功的。”<br>2017-02-15<br>哈，当我讲完之后，负责科学教育的一位部长站起来说：“费曼先生刚刚说的全是些让我们坐立难安的事情，但看起来他是真心热爱科学，而且他的批评也很具诚意。<br>因此，我觉得我们应该听他的。来这里之前，我早已知道我们的教育体制有病；但我现在才发现我们患了癌！”——说完随后坐下。<br>2017-02-15<br>我完全没有预期会那样。我知道他们的体制很糟糕，但百分之百的糟糕——那真是惨不忍睹！<br>2017-02-15<br>由于我的巴西之行受到美国政府某个计划的赞助，因此美国外交部要我就巴西经验写篇报告，我就把我的演讲内容写出来。后来透过一些渠道，知道外交部有些人的反应是：“这显示出，送这样天真的人去巴西是多么的危险。这个笨蛋只会给我们添麻烦，他根本不了解其中的问题。”刚好相反！我觉得外交部这位仁兄才真够天真：就因为他看到大学里开了一大堆课、也有种种说明，就以为看到了真相！</p>
-<p>第四部　堂堂大教授-8<br>2017-02-15<br>在拉斯维加斯的另一乐趣，是认识表演女郎。在两场表演中间休息时，她们都待在酒吧里，我猜这是旅馆方面要求她们这样做，以招徕更多赌客的。我就是那样认识了好几位表演女郎，跟她们谈话，发现她们都是很好的人。<br>那些说“表演女郎？”的人，心中早已存有偏见！但在任何一个团体中，如果你仔细看看，就发现包含了各色人等。</p>
-<blockquote>
-<p>注: 不带有偏见！</p>
-</blockquote>
-<p>2017-02-15<br>知道吗？我总喜欢弄明白这个世界到底是怎么一回事！</p>
-<blockquote>
-<p>注: 有趣的费曼</p>
-</blockquote>
-<p>第四部　堂堂大教授-9<br>2017-02-16<br>一个人年轻的时候，你有很多事情要担心：要不要到这个地方，你的母亲又会怎样等等。你担心、做决定，但又发生了其他的事情。事实上，比较容易的作法是什么都不管，就那样决定。不用管那么多——再没什么能使你改变主意了。<br>2017-02-16<br>我写了封信给他们说：“知道了薪水的数目之后，我已决定必须要拒绝了。我必须拒绝这么高的薪水，原因是如果我真的拿那种高薪，我就可以实现一切从前想做的事了——找一个很漂亮的情妇，替她找个公寓，买漂亮东西给她……用你们给我的薪水，我真的可以那样做，但我也知道我会变成怎么样。我会开始担心她在做些什么，等我回家时又会争吵不休，这些烦恼会使我很不舒服、很不快乐。我再没法好好做物理，结果会一团糟！我一直都想做的事情都是对我有害无益的，我只好决定，我没法接受你们的邀请了。”</p>
-<p>第五部　笑闹中的真智慧-1<br>2017-02-16<br>我在书上读到过，日本人都很客气，但也非常固执；你必须不断地下工夫。所以我决定要像他们一般顽固，而且一样的客气。这是一场心战，我们反反复复磨了半小时。<br>“为什么你要改住日式旅馆呢？”<br>“因为在这家旅馆里，并不能感觉到自己身在日本。”<br>“日式旅馆不好，你要睡在地板上。”<br>“我就是想这样，我要尝尝看那究竟是什么滋味。”<br>“而且那里没有椅子，要你直接坐在桌子前面的地板上。”<br>“没关系，这样很好，我就是要找这样的地方。”<br>最后，他才坦承：“假如你住另外一家旅馆，巴士要绕道接你去开会。”<br>“不！不！”我说：“早上我会自己来这家旅馆搭车。”<br>“好吧，好吧，这样就没问题。”结果就那么简单，只不过要花半个小时才能谈到真正的问题。<br>他正要走到电话旁，打电话给另一家旅馆，却又突然想起什么停下来。事情又触礁了。我又花了十五分钟才搞懂，这次问题出在邮件，万一会场有什么函件要传过来呢？<br>他们早已在这家旅馆作好妥善的信件寄送安排了！<br>“没关系，”我说，“早上我来搭巴士的时候，会先到旅馆看看有没有我的信。”<br>“好吧，那就没问题。”他打了电话，我们终于上路去日式旅馆。<br>一到旅馆，我就知道还是值得：那家旅馆真可爱，在它的大门前有个让你脱鞋子的地方，然后有个穿传统和服的女孩，脚上穿着拖鞋出来，拿起你的行李。你得跟着她行经走廊上铺着席子的地板，穿过纸门，只听得她“漆—漆—漆”地踩着碎步。一切都太美好了！<br>2017-02-16<br>有一天，他正在教我“看”这个字的日文。“好，”<br>他说，“如果你想说‘我可以看看你的花园吗？’你应该怎么说？”我用刚刚学会的字造了一个句子。<br>“不对，不对！”他说：“当你说：‘你想不想看看我的花园？’，你用的是第一个‘看’，可是当你想看看别人的花园时，你必须用另外那个‘看’字，比较有礼。”<br>基本上，第一种说法的含意是“你想不想瞄一下我的烂花园？”可是当你想看别人的花园时，你得说些类似“我能否参观你那漂亮的花园？”这样的话。因你必须用两种不同的字眼。<br>然后他又出了另一道题目：“你到庙里去，想看看那里的花园……”<br>我造了一个句子，这次我用的是有礼貌的“看”字。<br>“不对，不对！”他说：“寺庙里的花园更加、更加的优雅。所以你说话的语气应该好像‘我能把目光放在你那典雅无比的花园上吗？’”<br>同样的一项概念，却要用三四种不同的字眼来表达，只因为当我做这件事时，就很糟糕，但当做的人是你的时候，就很典雅。<br>我学日文的主要原因，是为了讨论专业上的东西，所以我打算看看同样的问题是不是也会发生在科学家身上。<br>第二天我在研究院里问我的日本同事：“‘我解了狄拉克方程式’的日文要怎么说？”<br>他们教我说。<br>“好。现在我要说：‘请你解狄拉克方程式好吗？’<br>我要怎么说？”<br>“那样嘛，你得用不同的‘解’字。”他们说。<br>“为什么？”我抗议：“不管是我解方程式，还是你解方程式，我们做的是同样的鬼东西！”“是，没错，但要用不同的字——这比较有礼貌。”<br>我投降了。我觉得日文不是我这种人学的，于是从此停止学日文。</p>
-<p>第五部　笑闹中的真智慧-2<br>2017-02-16<br>我知道特勒第很优秀，和他争论是很吃力的。但那时候，我已深信他的实验数据出了问题，而他自己会把它找出来——当然他比我更懂得找这错误了，因此我说我们不要尝试找出问题，只要耐心等候便可。</p>
-<blockquote>
-<p>注: 耐心</p>
-</blockquote>
-<p>2017-02-16<br>当然，你只能活一次，于是你犯该犯的错误，学习什么不该做，你的一生也就这样过去了。</p>
-<p>第五部　笑闹中的真智慧-3<br>2017-02-16<br>我想到以往跟政府部门打交道时，往往需要应付一大堆例行文书程序，便笑起来，说：“我很乐意做演讲，但是有一个条件，”——我故意卖个关子，再继续说下去——“就是我最多只会签13次名字，而且那还包括兑支票时签的一次！”<br>他也笑起来了：“13次！没问题。”开始进行了。首先我要签署一份文件，说我确实忠于政府，否则就不能在市立大学里面演讲，而且我要签两次。<br>接下来，我要签一份愿意放弃什么权利之类的东西——记不清楚了，是给市政府的。不多久，签名的数目就开始增加。<br>此外我又要签一份文件，证明我是货真价实的教授。<br>当然，由于这是市政府的事，他们要确保主事者不会偷偷地找自己妻子或朋友来演讲，甚至根本拿了钱不请人来演讲。他们要保证很多事情，签名次数便一直增加了。<br>起先笑起来的那位老师也紧张起来，但最后刚刚好，我刚好签了12次，剩下一次可以用来签支票；于是我就到他们学校履行诺言。<br>签了13次<br>几天之后，那位老师把支票带来给我，但他额角冒着汗；因为除非我先签一张表格证明我真的做了演讲，否则他就不能把支票给我。<br>我说：“如果我签了这张表格，我就没法兑现支票了。<br>你也在场，演讲你也听了，为什么你不能签？”<br>“先生，”他说：“这件事情是不是有点太无聊了？”“不。我们一开头就讲好这样安排的。那时我们没想过真的会到13次，但当时我们双方同意了，我觉得我们应该坚持到底。”<br>他说：“我已经很努力，问过很多人了，什么方法我都试过了；但他们都告诉我没办法，你不签这表格就没法拿到支票。”<br>“无所谓，”我说：“我只签了12次名，演讲也讲了，我可以不要那笔钱。”<br>“但我很过意不去。”<br>“没关系，我们讲好的，不要担心。”<br>第二天他打电话来：“他们不能不给你那笔钱！款项已编列出来，他们非把钱给你不可！”<br>“好吧，如果非这样不可，就让他们把钱给我吧。”<br>“但你要在表格上签名。”<br>“我不签那表格！”<br>他们全被卡死了。在他们系统里，像这样的一笔钱——该付给这个人却因为他不肯签名而无法付——简直无法处理！<br>最后，事情终于摆平了。过程拖了很久，也很复杂。<br>总之，我用我的第13次签名把支票兑现了。</p>
-<blockquote>
-<p>注: 跟我们朱老师差不多！！学校繁琐的办事流程！</p>
-</blockquote>
-<p>2017-02-16<br>我灵机一动。“听着，”我跟出租车站的人说，“会议是昨天开始的，所以昨天一定有很多人路过这里去参加研讨会。让我形容一下这些人，看你有没有印象：他们多半有点迷迷糊糊的，边走边谈，不大理会自己究竟往哪个方向走，谈话内容都是‘几——苗——鸟，几——苗——鸟’的。”（注：“几——苗——鸟”为Ｇμν的音译。</p>
-<blockquote>
-<p>注: 机智</p>
-</blockquote>
-<p>第五部　笑闹中的真智慧-4<br>2017-02-16<br>她告诉我这个故事：她和她先生一起来参观画展，两个人都很喜欢这幅画。她提议，“我们何不干脆买下这幅画？”<br>但是，她先生是那种凡事都要三思而后行的人，“再考虑一下吧！”他说。<br>她想起几个月后就是她先生的生日，所以当天就回到展览会场，买下了这幅画，决定在她先生生日那天，给他来个意外惊喜。<br>那天晚上，她先生下班时垂头丧气；最后发现，他后来想买下那幅画，逗她高兴。但等他回去画展一看，却发现画已经被别人买走了。<br>我从这个故事里，得到一些很新鲜的启示：至少在某个层面上，我终于了解到艺术究竟是为什么而存在。艺术能为人带来快乐；你创造的东西可以令人喜爱到得而喜，失而沮丧！科学却是普遍性的、宏观的，你不大会跟那些欣赏科学的人有个别而直接的认识。<br>我更了解到卖画不是为了赚钱，而是让真正想要这幅画的人可以把画买回家，是让那些得不到这幅画就很难过的人能拥有这幅画，真是有趣极了。</p>
-<p>第五部　笑闹中的真智慧-5<br>2017-02-17<br>于是我停下来——随便地停——仔细读那句话。记不清它的原文了，但跟这很接近：“社会区域的个体分子常常透过形象化的、符号化的渠道获得信息。”我反复地读，把它翻译出来。你可晓得它是什么意思？“大家都阅读”！<br>再读下一句，发觉那一句也可以翻译出来，整篇文章便变得空洞万分了——“有些人阅读；有些人听收音机”<br>之类；只不过他用些很华丽的包装，因此一开头根本看不懂。等我终于把它翻译出来之后，发现它根本什么也没说。<br>会议中只有一件还蛮有趣的事。会议上每个人说的话都是那么重要，重要得他们安排了个速记打字员在那里，把每句话记录下来。会议的第二天，速记员跑来问我：“你的职业是什么？一定不是个教授吧。”<br>“我就是个教授。”我说。<br>“哪一方面的教授？”<br>“物理——科学方面。”“噢！这就是原因了。”他说。<br>“什么的原因？”<br>他说：“你看，我是速记员，我把大家说的每一句话都记录下来。但他们说的我全都听不懂，而每次你站起来问问题或者说些什么，我却能完全明白你说些什么。因此我原本以为你不可能是个教授！”</p>
-<p>第五部　笑闹中的真智慧-6<br>2017-02-17<br>这是我经常玩的游戏之一。他们想要收据？我一张收据也不要给他们。那么你就拿不到钱了。好，那么我就不拿这笔钱。他们不相信我？见他的鬼吧，他们不必付我钱。<br>当然这是很荒谬的！我也知道这是政府作风，那么去他的政府吧！我觉得人应该把人当人看待。而直到我被当人看待之前，我不要跟他们有任何瓜葛！他们觉得难受吗？我也觉得难受呀！就那样算了吧。</p>
-<p>第五部　笑闹中的真智慧-7<br>2017-02-18<br>我的开场白是：对我而言，从科学研究的发现中所得到的乐趣，以及从别人可以利用我的研究成果等等，我已经得到了我的奖赏。我试图说明，我已经得到了我所期望的一切，因此，其余的事物相形之下，也就无足轻重，我真的已经得到了我的奖。</p>
-<p>第五部　笑闹中的真智慧-8<br>2017-02-18<br>在瓜地马拉一个鸟不生蛋的小镇里，我们走进一家博物馆；他们展示了一份满是奇怪符号、图片、线和点的文献。这是称为德瑞斯顿古抄本（Dresden Codex）的副本，由一个叫维拉哥它的人所复制的。这本古书是玛雅人写的书，在德瑞斯顿的博物馆里被发现。我知道那些线条和点都是数字。当我还只是个小孩子时，我父亲曾经带我去纽约参观世界博览会，他们在那里搭了一个仿建的玛雅庙宇。<br>父亲告诉我，玛雅人怎么发明了“零”这个数字，以及其他很多很有趣的事情。<br>2017-02-18<br>我的讲题是“解开玛雅象形文字之谜”。从这次演讲中，我得到很大的乐趣。于是再一次，我又“不务正业”</p>
-<p>第五部　笑闹中的真智慧-9<br>2017-02-18<br>作丈夫的总是喜欢证明他们妻子是错的；但跟其他许多当丈夫的一样，他发现他太太猜对了。<br>2017-02-18<br>我坐下来，把鼓放在两腿之间，用手指轻敲：卜卜卜，卜度、卜。然后又敲了几下，声音更大——毕竟这对我是很大的诱惑呢！我又更用力一点，最后电话铃声响起来。<br>“哈罗？”<br>“我是女房东。是你在那里打鼓吗？”<br>“是，很对不——”<br>“很好听呢。我能不能到你那里好好听清楚一点？”<br>从那时起，每次我开始打鼓、女房东就会跑来。我重新获得自由了，从此我就经常打鼓，快乐得不得了。<br>2017-02-18<br>我不希望，就像约翰逊（SamuelJohnson）说，如果你看到一只狗单用后腿走路， 了不起的不是它走得好，而是它会那样走。</p>
-<p>第五部　笑闹中的真智慧-10<br>2017-02-18<br>他来自哈佛大学，去过印度，写了一本通俗书叫《此时此地》（Be Here Now）。他描述他的印度大师教他如何“元神出窍”（在李历那里的布告栏上，经常看到类似的字眼）：<br>注意力集中在呼吸上，专注于空气如何从鼻孔吸入及呼出等等。为了要体验幻觉，我什么也愿意尝试，便再度进入箱内。进行到某个阶段，我突然觉得——这很难说得明白——我向旁边移动了一英寸。换句话说，我的呼吸——吸入、呼出、吸入、呼出，并不是在正中央：我的自我偏离了中心一点点了，差不多偏离了一英寸。<br>我想：“那么自我究竟在哪里？我知道大家都认为思想的重心在脑袋里，但他们怎么知道一定是这样的呢？从我以前读过的东西，我早已知道对那些做过很多心理学实验的人来说，这可不是那么明显的。例如，希腊人就以为思想的重心在肝脏里。”我又想：“可不可能，这是由于我们从小看到大人说‘让我想想看’的时候，经常把手放在头上，因此而得来的观念？这样说来，自我乃是位在眼睛后面的观念，很可能是一代教一代而来的！”我衡量如果可以把自我往旁边移动一英寸，那么我应该可以把它再移开一点的，这就是我的幻觉开始了。<br>试了一会儿，我可以使自我从脖子移动下去，走到胸部。当水滴到肩膀上时，我感觉它滴在“上面”——比“我”高的地方。每次有水滴下来，我都会吓一跳，自我就经过我的脖子跳回去平常的地方：然后我就要重新努力，让自我重新跑回胸部。最初我要很努力才能使它跑下去，但慢慢地就愈来愈容易了。我甚至可以把自我一直弄到腰部、偏到一边去，但在好长一段时间内，那就差不多是我能抵达的极限了。<br>2017-02-18<br>于是我跑回家，把灯关掉，坐在客厅里一张舒服的椅子里，但我试了又试，都不成功。离开水箱之后，我从来没有获得幻觉。我很想试试能在家里就看到幻觉，也毫不怀疑你可以靠冥想和练习来达到那种境界，但我从来没那样练习过。</p>
-<p>第五部　笑闹中的真智慧-11<br>2017-02-18<br>因此我只有一个希望：你们能够找到一个地方，在那里自由自在地坚持我提到过的品德；而且不会由于要维持你在组织里的地位，或是迫于经济压力，而丧失你的品德。<br>我诚心祝福，你们能够获得这样的自由。</p>
+          豆瓣：《别闹了，费曼先生》
 
-          
+理查德・曼（Richard P.Feyrman）1918年出生，1939年于麻省理工学院毕业后，进入普林斯顿大学研究院，又加入罗拉拉摩斯实验室，对原子弹的发展贡献卓著。1956年与薛温格和朝永振一郎共获诺贝尔物理奖。1988年2月困患癌症辞世。费曼的思想如天马行空，喜自
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/02/18/30/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -888,16 +698,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-16T18:25:08+08:00">
-                2017-02-16
-              </time>
-            
 
             
 
@@ -942,27 +742,22 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>摘要：</p>
-<ol>
-<li>自律是有限的</li>
-<li>自律并不能带来更多快乐</li>
-<li>转变思想 + 执行方法</li>
-</ol>
-<p>相信很多人——不管是自律还是不够自律的人——都认为一个观点，如果自己更自律一些，那么将会更加快乐，原因很简单，更自律会使生活、工作更加有条理性，更加简洁明快，更有效率，那么幸福感自然会提高，但是事实上这是不正确的。</p>
-<p>有个有趣的实验，第一组被测试者被带到一个房间，他被安排在那里等10分钟之后去做测试，他座位旁的桌子上放了一碟刚做好的巧克力曲奇，香气充满了整个房间，不断地冒进他的鼻子当中，而他被告知，这是为下一位被测试者准备的。10分钟后，他进行“真正的”的测试，一些特别难的迷题，几乎没有人能完成，整个测试需要极强的耐心和坚持。<br>对照组同样是被测试者被带到房间，桌子上不再是巧克力曲奇，而换成了甜菜根，被实验者依然被告知，是为下一位被测试者准备的，同样地，10分钟后他们被要求做测试，依然是那些难以完成的迷题。<br>而实验的目的并非要看哪个组——巧克力组和甜菜根组——答题的成绩高，其真正目的是要看哪个组在后面的测试中坚持的时间更长。<br><strong>结果显示，甜菜根组坚持的时间显著地高于巧克力组。</strong></p>
-<p>为什么？因为在第一个阶段，巧克力组用自律来阻止自己动曲奇，他们成功地没有动曲奇，而他们的部分自律却被消耗了，因此，后面他们在“真正的”测试——需要很强的自律——中，却没有足够多的自律了。<br><strong>这个实验的结论是：我们的自律是有限的，我们需要将有限的自律应用到合适的方面。</strong></p>
-<p>而多数人觉得做许多事都是需要自律的，比如：早起、锻炼、读书……而且他们觉得这样做是对的，应用自律到这些方面没有问题，他们会因而感到快乐，但是，实事上，这是错的！<br>即使他们坚持做到了这些事，他们依然不会快乐，甚至往往是坚持不下去。你想啊，让我做一件特别不情愿事，当然要极强的自律才能完成了，完成之后也只是大松一口气，而不会体验到快乐。</p>
-<p>那么，当我们看到别人很“自律”地完成很多事的时候，是不是只能羡慕地说：“这个人真是太有毅力了”呢？<br>事实并非我们认为的那样，以我个人为例，定期去锻炼是自己想去做的，即使没有时间也想从别的地方偷懒而去，感觉锻炼就是去玩一样，并不需要所谓的“坚持”、“自律”、“毅力”。</p>
-<p>因此，我们需要做的并不是依靠“自律”去完成我们的目标，而是转换思想——完成目标是我们自身真正想要的，我们不需要坚持着做一件事，那样很痛苦，不会快乐。<br>有了这样的想法就能完成“新年目标”？要知道每次新年目标都是我们特别想要完成的呢！但是终究都无法做到！</p>
-<p><strong>那是不是说了这么多都没有用呢？</strong><br>要完成一个目标，成为你的需要只是第一步，第二步就是要分解目标！</p>
-<blockquote>
-<p>有时候一个目标，要分为多个项目来完成，<br>每个项目又可以分为多个可执行的任务，<br>每个任务也不是一天能完成的，又可以具体分解到每一天当中。<br>如此这般才具有了可行性，完成起来不必费“自律”，同时也收获轻松快乐。</p>
-</blockquote>
-<p>比如：一年计划看52本书是目标，52本书则可以是52个项目，每个项目都有相对应的页数，一周一本的话，很容易算出来一天要看多少来，而每天要做的就是找个时间来完成任务了。<br>再比如：要背完托福2100个单词，可以分成21个项目，每个项目都是100个单词，这样可以具体到每一天了，但是一天看一次也的记不住的，还不算可执行的任务，那就再分，早上复习一遍昨天的100词，再背今天的100个新词，要听发音看例句，甚至抄（这样真的可以加深印象），中午再复习一遍，下午再花时间复习，晚上睡觉前再复习一遍。而完成三个项目的时候，需要另加一个复习项目，这样多出7个项目来，因为之前的又有遗忘，而完成六个项目的时候，又可以进行一个大复习，这样又增加了4个项目来，最终再加2个总复习，总共可以分34个项目（34天）来完成。</p>
-<p>另外，我也想定一个早起目标，我觉得最重要的是早睡！</p>
-<p>-<em>完</em>-</p>
+          摘要：
 
-          
+自律是有限的
+自律并不能带来更多快乐
+转变思想 + 执行方法
+
+相信很多人——不管是自律还是不够自律的人——都认为一个观点，如果自己更自律一些，那么将会更加快乐，原因很简单，更自律会使生活、工作更加有条理性，更加简洁明快，更有效率，那么幸福感自然会提高，但是事实上这是不正确的。
+有个有趣的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/02/16/29/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1037,16 +832,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-20T10:15:41+08:00">
-                2016-12-20
-              </time>
-            
 
             
 
@@ -1091,27 +876,17 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>最近身边不少同学开始去健身房，我是相信行动带来改变的。<br>对于想要开始锻炼的人，第一问题往往都是怎么做呢？但是我想先说一下另一个问题，为什么要锻炼呢？目的不同，要做的也不一样，可以想像到，锻炼的人有三种，</p>
-<blockquote>
-<p>第一种是运动员类型的人，他们是专业健身人士或者运动员，身体很好，他们要是比赛出成绩的，他们的训练科学合理，同时强度也大，有时候是超负荷的。</p>
-<p>第二种是围观群众类型的，一般对自己的身材有些不太满意，但是也很不想累，他们去健身房就是为了看别人锻炼，同时给自己心理以安慰，并没有计划，多是在休息。</p>
-<p>第三种是为了健康而锻炼的，当然多数人也正是出于这样的目的，我也是作为这个目的才锻炼的，因此，可以写一点心得，给想健身或者已经开始的人分享一下。</p>
-</blockquote>
-<p>如果同我一样，你的目的也是为了健康才开始锻炼的，那么，我想最重要的一点就是安全、安全、安全！无论做什么动作，都要考虑下自己的安全和别人安全，安全这点是再怎么强调也不为过的。<br>对于怎么做呢？简单的方法就是开口问，就个不恰当的比方，去了健身房，就当自己是一只无头苍蝇吧，就乱问乱搞就行，而往往这样是入门最快的方法。不要着急，也不用担心器械不会使用，每一个高手都是从新手开始的，每一个主力都是从替补开始的，等过一两周就所有的都熟悉了。<br>这之后，你就要靠自己了。别人给你的指导往往只能是动作上的，而只有你自己才知道你究竟想要做什么，</p>
-<blockquote>
-<p>你要问问自己究竟想锻炼什么部位以及你的时间分配如何。</p>
-</blockquote>
-<p>对于同样是为了健康而锻炼的人，也可以有不同的类别。<br>以减脂为目的，要多做有氧运动，一般持续运动20分钟以上才开始全面消耗脂肪，所以开始不要拼尽全力，慢慢来，不然刚到20分钟就累得没有力气了，减脂的效果不会明显。<br>以提高肌肉力量为目的，就做大重量的运动，这里的大重量并不是绝对重量而是相对重量，对你来说的大重量对别人来说可能很轻，一般就是一个动作可以做8-12次就没有力气的重量就是你的大重量了，这一次就称为一组，中间休息一下，时间自己掌握，对一个动作可以做3-4组，当你持续一段时间同一重量后就可以适当增加，给肌肉新的刺激，这样慢慢就会增加肌肉的力量。<br>以提高耐力为目的的，这种可以用相对大重量轻些的重量来完成动作，一般可以做到15-20次一组，甚至可以做到力竭。尤其注意不要用过大的重量来完成太多，很容易扭伤，反而得不偿失。在我看来，耐力比力量更重要，虽然力量大会爆发力强，但是想想足球场上，跑满90分钟可不是只靠爆发力的，耐力好才更持久。<br>以提高肌肉维度为目的的，可以适当锻炼，并吃些蛋白粉之类的，会长很快。</p>
-<p>接下来，自己制定健身计划吧！这个计划因人而异，以下是一些建议。</p>
-<ol>
-<li>合理搭配。比如：今天锻炼胸和腿，明天休息，后天可以锻炼腰腹和胳膊，不要每天都锻炼，也不用每次都锻炼全身，肌肉在休息的时候会长大。</li>
-<li>把热身加到计划中。很多人去了健身房马上开始做自己的动作，根本不热身，这样很危险，热身相当于把沉睡的肌肉唤醒，不热身很容易扭伤。</li>
-<li>量力而行。不要做超过自己极限的事情，即使不受伤，长期会造成劳损，对关节损伤很严重，所以可以看到多数职业运动员都有很多伤病在身，等年纪大了会很难受。</li>
-<li>注意柔韧性的锻炼。很多人力量很强，但是上楼梯的时候却摇摇晃晃，很是不稳，也很不灵活，不知道这样的力量大能干什么了，不要捡了芝麻却丢了西瓜。</li>
-<li>饮食和睡眠也很重要。详细教程，只要你找总能找到很多。</li>
-</ol>
+          最近身边不少同学开始去健身房，我是相信行动带来改变的。对于想要开始锻炼的人，第一问题往往都是怎么做呢？但是我想先说一下另一个问题，为什么要锻炼呢？目的不同，要做的也不一样，可以想像到，锻炼的人有三种，
 
-          
+第一种是运动员类型的人，他们是专业健身人士或者运动员，身体很好，他们要是比赛出成绩的，他们的训练
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/20/28/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1186,16 +961,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-20T10:13:22+08:00">
-                2016-12-20
-              </time>
-            
 
             
 
@@ -1240,60 +1005,20 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>1</p>
-<blockquote>
-<p>为学日益，为道日损。——老子</p>
-</blockquote>
-<p>大概意思就是，“学”是对外在知识的追求，需要的是每日精进，而“道”则是对内在精神的追求，需要的是对内在不完善的摒弃。</p>
-<p>类似的， 有人曾经问“大卫”的创作者——米开朗基罗（文艺复兴时期杰出的通才、雕塑家、建筑师、画家和诗人，与列奥纳多·达芬奇和拉斐尔并称“文艺复兴与艺术三杰”）一个问题，“你是如何创作出——‘大卫’——这样的杰作的？”，米开朗基罗回答说，“这很简单啊，我去了一个采石场，发现一整块大石头，在这个大石头中，我看到了‘大卫’，所以我做的只是把多余的部分去除掉而已。”</p>
-<p>我们的内心深处就像是一个大容器，里面主要由两部分构成，一部分是理性，指我们的才智和思想；另一部分则是感性，包括我们的情绪、欲望、冲动等。内心深处天生就是由这两部分构成的，老子的观点是修身就是要不断地摒弃情绪、欲望、冲动的束缚，获得真正的自由，想想这个理论真是太过美好，让人向往，但是，既然情绪、欲望、冲动等是天生的，又如何能够被消除呢？抑或说，没有了天性中的部分，比如连气都不会生了，那好无聊，而且消除这些天生的属性必将痛苦，那获得的自由又有什么意义呢？</p>
-<blockquote>
-<p>疑惑的时候就去读书吧！在书中，总能找到问题的答案，如果没有找到，那就继续读吧！</p>
-</blockquote>
-<p>《当时忍住就好了》这本书给出了不错的方法。</p>
-<p>2<br>为了简单明白地说明这件事，这本书的作者定义了几个概念。</p>
-<ol>
-<li>理性的能量，是指我们的才智，即我们的见识或我们脑中的思想。</li>
-<li>感性的能量，指的是我们的感受，即我们通常所说的情绪、欲望、冲动等。</li>
-<li>情绪包括：爱、生气、憎恨、嫉妒、愤怒、冷漠、难过、绝望、不安等。</li>
-<li>欲望则更多是一种生理需求，比如对性、食物、触摸的需求。</li>
-<li>成长必须是心理、情感和智力上的三重成长。</li>
-</ol>
-<p>3<br>让我们受到伤害的或者说关键时刻让我们失控的是——能量，因此，作者提出了两种能量，一种是理性的能量，就是我们的理智或思想，另一个是感性的能量，指我们的感受，即情绪、欲望和冲动。</p>
-<blockquote>
-<p>客观来讲，能量本身并没有好坏对错之分。<br>有好坏对错之分的是能量所带来的后果。</p>
-</blockquote>
-<p>比如，一个人在工作中总是无法控制自己的情绪，很容易发火，而发火这一结果是极其有害的，很有可能因此而丢掉工作。另一个人，在球场上无论如何提不起精神，而在后期他被对手激怒了，因而提起了十二分的斗志，被激怒这一结果是很有利，他们因此赢得了比赛。</p>
-<p>你已经看到，同样是生气、发火但是结果却有很大不同。因此，我们并非要摒弃我们天性中的一部分，而可以有效地利用我们的天性来带来生活的变化。</p>
-<p>4</p>
-<p>这里我想说下，我并不想因为一些东西很有意思就去写它，或者说一个理论很美就去写，我想写的是真正能用的东西，最好可以直接应用到生活中，对生活起到积极的作用，我也并不想让人感谢，因为仅仅这样做就让我很高兴了。</p>
-<p>这本书让我很喜欢的原因也正是它真正地写出了具体的方法，通过七个步骤来驾驭能量。</p>
-<blockquote>
-<ol>
-<li>找出你心中的“情感触发器”</li>
-<li>预测你的人生</li>
-<li>设想你的未来</li>
-<li>反思——不再为相同的事情失控</li>
-<li>给自己一个备忘录</li>
-<li>作出有价值的人生选择</li>
-<li>回顾人生</li>
-</ol>
-</blockquote>
-<p>以上每一步，书中给出了非常详细和形象的说明，这里只说下我的想法。</p>
-<ol>
-<li>找出你心中的“情感触发器”。每个人都有自己的特殊的“情感触发器”，有的人害怕被批评，有的人喜欢被表扬，有的人害怕被抛弃，有的人喜欢被爱，这些看着相似，但仔细想想也有区别，而这都没有好坏之分，我们要做的只是利用这些天性来改善生活。如果你有一个特别喜欢的人，而他/她同时也爱着你，你一定不想失去他/她，这就是你的“情感触发器”。</li>
-<li>预测你的人生。人生充满了未知，但是有些事确实可以预测。比如，你喜欢的人是个普通人，即使他/她比一般人优秀，但是也不能保证最优秀吧，则可以预测到以后你很有可能碰到比他/她更优秀的人吧，当碰到比你的另一半更优秀的人时候，你会如何呢？不要认为誓言多么重要，在现实面前，誓言就好像是考场中的诚信问题，但凡有机会通过作弊提高成绩，诚信还那么重要吗？</li>
-<li>好，这样你可以设想你的未来做何选择了，你是否想做一个不诚信（或者是否想被逮到作弊）的人，是否想让你喜欢的人受伤害，利用“情感触发器”，相信你可以做出正确地选择。这样真正面对这种情形的时候，应该可以做得更好吧！</li>
-<li>并不是所有事情都等你有了设想才发生，很多时候人还是会失控，甚至总是会反复失控，我不想追问失控究竟是你的原因还是别人的原因，但是你总希望少发生这样的情形吧，因为一旦失控就会对别人产生伤害，这是一种不尊重人的表现，于此同时，对你本身来说也没有好处，失控就像感冒一样，一旦开始了就无法立刻停止，因此在没有失控时，做预防是最有效果的，最好的预防就是反思，用你的理智去思考一下，即使是别人的过错，难道不能用一种更缓和的方法解决问题吗？你的强有力的“情感触发器”是什么？最基本的要不要尊重人，你可以预测一下再次出现这样的情况时，设想一种新局面。</li>
-<li>如果你真正认真思考了一件事，同时又不想让它重复发生，为什么不写下来，写下来真的比只是想想效果好很多。</li>
-<li>成长必须是心理、情感和智力上的三重成长，犯错是成长过程中不可缺少的部分，犯错本身并不会带来改变（当然因为犯错而获诺贝尔奖也是有的……），从这些错误中反思，才能促使我们做出更有价值的人生选择。</li>
-<li>回顾人生，是一个全面的反思，这挺重要的。</li>
-</ol>
-<p>5</p>
-<p>其实，要真能做到利用感情的能量，大概离老子所说的为道日损也就不远了吧！</p>
-<p>祝你好运。</p>
+          1
 
-          
+为学日益，为道日损。——老子
+
+大概意思就是，“学”是对外在知识的追求，需要的是每日精进，而“道”则是对内在精神的追求，需要的是对内在不完善的摒弃。
+类似的， 有人曾经问“大卫”的创作者——米开朗基罗（文艺复兴时期杰出的通才、雕塑家、建筑师、画家和诗人，与列奥纳多·达芬奇和拉斐尔并称“文艺复兴
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/20/27/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1368,16 +1093,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-18T22:45:56+08:00">
-                2016-11-18
-              </time>
-            
 
             
 
@@ -1422,38 +1137,19 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>很想分享一个大家都懂的道理。</p>
-<blockquote>
-<p>什么技能都不会突然领悟。</p>
-</blockquote>
-<p>1<br>最近开始练习一个小技巧，一只手依次抛两个硬币，可能有人小时玩过这种游戏，但是真心很多人长大以后就失去了好奇心，同时也失去了不少欢乐吧。<br>长大以后总是问，做一件事有什么用呢？然后就不去做了，但是这本来就很有意思啊！想想小孩子吧，小时候简单就很快乐，长大了想快乐却不简单。<br>经过五天的练习，每天20分钟，从不能够做到，到可以依次抛36次，这是我目前的最高纪录了。</p>
-<p>2<br>抛硬币，这个游戏很简单，大致方法就是，手中先拿两个硬币，先抛一个硬币上去，等其在最高点的时刻，将第二个抛上去，，然后接落下来的第一个，循环往复。<br>要点是，不要让两个硬币在空中碰撞，所以可以从左边一点上去，让其从右边一点落下来。当然也可以从前面一点上去，让其从后面一点落下来。</p>
-<p>3</p>
-<blockquote>
-<p>什么技能都不会突然领悟。</p>
-</blockquote>
-<p>意思是：基本上即使已经知道了方法，也不会有技能不经过刻意练习，而在睡醒一觉之后被习得。连抛硬币这种简单技能都需要刻意练习。<br>还有，比如：打羽毛球、打篮球、学习一门外语、学习一门课程等等。<br>开始做不好太正常了！You are not alone！<br>毕竟刚学习一个新事物，我们都是新手，不能做好太正常了，所以不用为自己做不好而感到畏惧，而是应该把注意力（注意力是你很宝贵的财富）放在提高自己技能上。</p>
-<p>4<br>说这么多没用的，倒是告诉我怎么快速掌握一个技能啊！<br>我只能告诉你——没有！什么7天减肥、一星期成为听力高手，不是投机取巧就是骗人的。<br>如果一个技能如此廉价，也就不值得习得了。</p>
-<blockquote>
-<p>但是如何去习得一个技能还是有点方法的！</p>
-</blockquote>
-<p>第一步：找到一个适当的方法。<br>第二步：刻意练习。<br>第三步：让时间证明。</p>
-<p>时间在这里，像金钱一样，在学习技能上，你付出了时间也就相当于购买了它，而且这里绝对没有欺骗。</p>
-<p>5<br>这里又有新问题了。</p>
-<blockquote>
-<p>我知道某个技能很重要啊——比如英语。<br>我也知道方法——听说读写嘛。<br>我坚持三天以后就坚持不下去了。</p>
-</blockquote>
-<p>很多人都有类似的体验，这也是很多人总是不能学成一项技能的原因。<br>其实坚持本来就是不让人喜欢的。</p>
-<blockquote>
-<p>人的大脑天生就是趋利避害的高手。</p>
-</blockquote>
-<p>基本上，你只要是想坚持做一件事，就注定要失败了。<br>因此，你需要做的是，喜欢一件事，不要坚持，而是要不得不去做。<br>如果你想抛硬币，就喜欢上抛硬币，像小孩子一样，带着欢乐去做……<br>如果你想跳舞，就喜欢上跳舞，享受过程……<br>如果你想读书，就喜欢上读书，不必为了某种目的去做……<br>如果你想习得英语，就喜欢上英语，找时间刻意练习……</p>
-<p>6<br>有个理论大概是说这个道理的——一万小时定律——但是我不大确信，因为例子随便找，如果要找一万小时成功的例子，也有一千小时成功的例子啊，还有一万小时不成功的呢！<br>生活原本很无趣，享受抛硬币吧！<br>非常喜欢的电影《黑暗骑士》中，the Joker的一句话。</p>
-<blockquote>
-<p>You know what I am？ I’m a dog chasing cars.<br>I wouldn’t know what to do with one if I caught it!<br>You know, I just do things.</p>
-</blockquote>
+          很想分享一个大家都懂的道理。
 
-          
+什么技能都不会突然领悟。
+
+1最近开始练习一个小技巧，一只手依次抛两个硬币，可能有人小时玩过这种游戏，但是真心很多人长大以后就失去了好奇心，同时也失去了不少欢乐吧。长大以后总是问，做一件事有什么用呢？然后就不去做了，但是这本来就很有意思啊！想想小孩子吧，小时候简单就很
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/18/26/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1528,16 +1224,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-06T11:23:48+08:00">
-                2016-11-06
-              </time>
-            
 
             
 
@@ -1582,42 +1268,18 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>1</p>
-<p>我往往，甚至是经常感叹同龄人竟如此的优秀。</p>
-<p>一个英文讲座现场，我拼命去听，依然是一知半解，但是同龄人中很多人不但听得懂，还可以提出自己的问题。而我却不能……<br>同一门课，同一个老师教，期末考试成绩总是很好。而我却很差……<br>总有同龄人，参加各种社团，认识很多人，遇到事情，总能找到人帮忙。而我却没有……</p>
-<p>如果说原因就是英语差、学习得不好、不善于交际的话，总感觉要能说服自己，好像还差点什么。<br>因为毕竟差、不好和不善于都是可以通过学习不断地进步的。<br>但，多年之后，</p>
-<blockquote>
-<p>依然有同龄人在领导一些人。<br>依然有同龄人在某个领域很突出。<br>依然有同龄人的生活比一般人的要好。</p>
-</blockquote>
-<p>后来，想了很久我才大致明白，</p>
-<blockquote>
-<p>每个人的脑子都是由很多概念（concept）构成的，而优秀的人往往是有更多、更清晰的概念。<br>李笑来给出大脑一个相当形象的类比，人的大脑好比一个由概念组成的操作系统。</p>
-</blockquote>
-<p>可能是这个原因，使得每个人对人对事都有不同的观念和看法，也因而导致每个人有不同的人生。</p>
-<p>2</p>
-<blockquote>
-<p>A concept is an abstraction or generalization from experience or the result of a transformation of existing concepts.<br>翻译过来，就是概念是对经验或已有概念的转化的抽象或概括。</p>
-</blockquote>
-<p>每个人都有每个人的概念，因此每个人对事物会有各自的看法。<br>有些概念是你不知道的。<br>有些概念是你听过，但是在你大脑中模糊不清的。<br>有些概念在你大脑中则根本就是错误的。</p>
-<p>哪些概念是你不知道的。请看下面一段话。</p>
-<blockquote>
-<p>乡土中国是个礼俗社会而非法理社会，即存在差序格局又存在团体格局，中国文化是属于阿波罗式文化还是浮士德式文化呢？什么时期是横征权力，什么时期是同意权力，什么时期是长者统治权力呢？</p>
-</blockquote>
-<p>如果你没有看过《乡土中国》，一般看完也是一头雾水，每个字都认得，但是组在一起就跟外语一样，就是因为其中的概念你还不知道。（有兴趣可以自己查下每个词。）</p>
-<p>哪些概念是你听过，但是在你大脑中模糊不清的。<br>比如：爱、智力、学习……</p>
-<blockquote>
-<p>爱，就是对于一件事，你愿意付出时间、金钱和精力。<br>智力，是学习的能力。<br>学习，学是和陌生事物的最初接触，习是反复地做。</p>
-</blockquote>
-<p>有了清晰的概念，就可以准确地给一些事物定性。<br>是不是真正地爱运动、旅行、打游戏，或某个人。<br>是不是没有文化的人智力低下呢？<br>为什么学习的课程后面都要安排练习题？</p>
-<p>哪些概念在你大脑中则根本就是错误或不当呢？这部分最应该注意了，我们应该像拔杂草一样找出这些错误的概念，并修正。<br>你认为英语是一门课程，别人却认为英语是打开通向世界大门的钥匙。所以你感觉学习英语很痛苦，而别人则乐在其中。<br>你认为数学是一门课程，各种微分、积分没有意义，别人却认为数学是精确描述世界的工具。你觉得很无聊，别人却因对世界有了更清楚地描述而满怀热情。<br>你认为整个世界都充满了恶意，没有一个有钱有权的老爹是难以生存的，而别人却认为能力和价值才是真正有用的。你选择自我懈怠，而别人却不断提高能力和价值。</p>
-<p>3</p>
-<p>对于不知道的概念，了解一些总不会吃亏，这样就会增大自己获得知识的机会，至少明白对方说的是什么才能思考他说的对还是不对。而在自己的专业内，清楚地知道所有概念是很重要的。这种概念通过网络或者阅读总能找到。</p>
-<p>对于模糊不清的概念，一方面可以当做不知道的概念，来搜索找到准确的概念，另一方面则需要自己总结。</p>
-<p>对于前两种概念，你还大可不必太过在意，大不了我们不去了解一个行业或专业，但是对于错误或者不当的概念，就非常危险，会让你的世界和别人的世界异常不同。对于这种概念需要我们不断地抗争，我们应该像拔杂草一样找出这些错误的概念，并修正，人生可能就是要不断完善自己的大脑中的概念。<br>而我相信，当一个人大脑中的概念都很清楚的时候，他/她则是一个优秀的人。</p>
-<p>4</p>
-<p>请思考，时间在你的概念中是什么呢？</p>
+          1
+我往往，甚至是经常感叹同龄人竟如此的优秀。
+一个英文讲座现场，我拼命去听，依然是一知半解，但是同龄人中很多人不但听得懂，还可以提出自己的问题。而我却不能……同一门课，同一个老师教，期末考试成绩总是很好。而我却很差……总有同龄人，参加各种社团，认识很多人，遇到事情，总能找到人帮忙。而我却没有……
 
-          
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/11/06/25/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1692,16 +1354,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-29T21:11:49+08:00">
-                2016-10-29
-              </time>
-            
 
             
 
@@ -1746,58 +1398,17 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>1<br>前几天，一个师姐对我说，她很容易情绪失控，我想我并不能帮助她解决她实际的问题，但是多少可以给她解释下她情绪失控的原因，经验告诉我们，当一个人已经生气或者已经在生气的路上的时候，再苦口婆心地劝他/她不要生气一点用处也没有，甚至还会起到想反的作用。</p>
-<blockquote>
-<p>“Control your anger before it controls you.”<br>“妈的，老子都这么生气了，你还让我不要生气，我要是能不生气的话，还生气干什么？”</p>
-</blockquote>
-<p>是的，正常人都是这个想法，不过，我有个方法，对情绪失控多少有些帮助。<br>如果可以恰好帮到你，我会很开心。</p>
-<p>人们常说，这个人脾气很好，所以很少或者从来不跟人生气；那个人脾气很差，所以总是跟别人着急发火。<br>其实，这种说法是错的。</p>
-<blockquote>
-<p>并非脾气的好或者坏决定一个人会不会生气，而是其思考方式决定的。</p>
-</blockquote>
-<p>2<br>一个人情绪失控，包括不开心、焦虑、着急、生气、发火等等，往往是因为遇到了麻烦（problem），我不想用“问题（problem）”这个词，因为后面还有个“问题（question）”，不想混淆这两个概念。</p>
-<blockquote>
-<p>A problem is a difference between things as desired and things as perceived.–<em>Are your lights on?</em><br>翻译过来就是：麻烦，是期望与现状的差异。</p>
-</blockquote>
-<p>因此，每次要情绪失控的时候，你都是遇到了麻烦，都是现状与期望的不同了，而有过情绪失控经历的人大都知道，生气对于麻烦的解决是没有一丝帮助的，而提出正确的问题（question）才是关键。</p>
-<p>3</p>
-<blockquote>
-<p>提出问题（question）就是把麻烦用适当的方式陈述出来。</p>
-</blockquote>
-<p>这种问题一般可以粗略分为两类：可解决的问题和不可解决的问题。<br>先说后者——不可解决的问题，实际上，本来就存在很多我们无法解决的问题，连最聪明的数学家也有其不能解决的难题，所以如果你有问题属于这一类就选择放弃吧，没有什么可丢人的，大家都一样。</p>
-<p>具体说来，这类问题又可细分为：</p>
-<ol>
-<li>永恒的问题，如战争、贫困、公正、死亡、犯罪……<blockquote>
-<p>life’s not fair, get used to it. –<em>Bill Gates</em></p>
-</blockquote>
-</li>
-<li>别人的问题，如不被理解，这本就是对方的错，不要自己纠结了。别人的好吃懒做或性格很差，那他/她早晚要吃亏，管他/她干嘛。</li>
-<li>不用解决的问题，如身高，长得不高完全可以选择不打篮球的，打也可以不选择和高的人对位的。</li>
-</ol>
-<p>我们更应该着眼于可以解决的问题，这类问题也可以细分：</p>
-<ol>
-<li>自己造成的问题。这类问题要重点解决，而问题有难度也并不可怕，即使自己能力不够也没有关系，很多事情，前人都已经经历过了，google或向别人请教都可以。当真遇到一个其他人都没有碰到过的问题并且有必要解决的，那你就认真钻研吧，相信你会有所成就。</li>
-<li>所有人造成的问题。如很多人都乱丢垃圾，你没有能力强制别人如何做，从自己做起吧，如果都这样的话，会有所改善的。</li>
-<li>特定人解决的问题。如电路有问题就不要自己修理了，没有电工知识还是有点危险的。</li>
-<li>会自动解决的问题。如电脑或手机系统有bug，先将就用吧，系统早晚会更新，自己着急大多没有用，毕竟不是自己能处理的。</li>
-</ol>
-<p>4<br>举个例子，我很不开心，没有衣服穿了（当然，很多女生说这话，一般是没有新衣服穿，和有很多衣服穿的意思）。现在的麻烦就是没有衣服穿了，这是自己造成的问题，不开心没有用，那就买衣服解决问题罢。这时又有新麻烦了，卡里没钱了，如果不找父母要钱，或找同学借钱的话，这个问题就属于不可解决的问题，那放弃没有衣服穿这个念头吧，把精力集中在提升自己价值的问题上，可能将来这个问题就会轻松解决呢！</p>
-<p>5<br>对于情绪失控，我的方法很简单了。<br>当遇到不顺心的事时，生气并不是你唯一的选择，你还可以做一件事，</p>
-<blockquote>
-<p>思考一下，除了生气，还能做些什么？</p>
-</blockquote>
-<p>对于，1）可以解决的问题，耐心去解决吧，2）不能解决的问题，放弃吧，把你宝贵的注意力放到有意义的事上吧。</p>
-<p>因此，你也发现，之前那句话，</p>
-<blockquote>
-<p>并非脾气的好或者坏决定一个人会不会生气，而是其思考方式决定的。</p>
-</blockquote>
-<p>确实是错的，应该是，</p>
-<blockquote>
-<p>思考方式决定一个人对一件事会不会生气，而你的表现会让别人认为你脾气好还是坏。</p>
-</blockquote>
-<p>6<br>愿你每天都有好心情！</p>
+          1前几天，一个师姐对我说，她很容易情绪失控，我想我并不能帮助她解决她实际的问题，但是多少可以给她解释下她情绪失控的原因，经验告诉我们，当一个人已经生气或者已经在生气的路上的时候，再苦口婆心地劝他/她不要生气一点用处也没有，甚至还会起到想反的作用。
 
-          
+“Control your anger befor
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/10/29/24/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1872,16 +1483,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-21T20:51:33+08:00">
-                2016-10-21
-              </time>
-            
 
             
 
@@ -1926,36 +1527,21 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       
         
           
-            <p>真是一本很不错的书。</p>
-<ol>
-<li>学习：学是和陌生事物的最初接触，习是陶炼。</li>
-<li>学就是在出生之后以一套人为的行为方式作模型，把本能的那一套方式加以改造的过程。</li>
-<li>习是指反复地做作 ，靠时间中的磨练，使一个人惯于一种新的做法。</li>
-<li>礼俗社会：并没有具体目的，只是因为在一起生长而发生的社会。</li>
-<li>法理社会：为了要完成一件任务而结合的社会。</li>
-<li>智力：学习的能力。（“愚”如果是指智力的不足或缺陷，那么识字不识字却并非愚不愚的标准。）</li>
-<li>语言：用声音来表达的象征体系。</li>
-<li>象征：附着意义的事物或动作。</li>
-<li>文字是间接的说话，而且是个不太完善的工具。文字所能传的怀、达的意是不完全的。原因是“间接接触”。所以在利用文字时，我们要讲究文法，讲究艺术。文法和艺术就是在减少文字的“走样”。</li>
-<li>行话是在一个社群所用的共同语言之外，必然会因个人间的需要而发生许多少数人间的特殊语言。</li>
-<li>差序格局：存在伦的格局，伦是有差等的次序。</li>
-<li>团体格局：在团体里的人是一伙，对于团体的关系是相同的，如果同一团体中组别或等级的分别，那也是事先规定的。</li>
-<li>道德观念：是在社会里生活的人自觉应当遵守社会行为规范的信念。它包括着行为规范、行为者的信念和社会的制裁。</li>
-<li>家庭，在人类学上是个亲子所构成的生育社群。亲子指它的结构，生育指它的功能。</li>
-<li>两种文化模式：一阿波罗式的文化认定宇宙的安排有一个完善的秩序，这个秩序超于人力的创造，人不过是去接受它，安于其位，维持它；但是人连维持它的力量都没有，天堂遗失了，黄金时代过去了。这是西方古典的精神。二浮士德式的文化把冲突看成存在的基础，生命是阻碍的克服；没有了阻碍，生命也就失去了意义。他们把前途看成无尽的创造过程，不断改变。</li>
-<li>恋爱是一项探险，是对未知的摸索。这和友谊不同，友谊是可以停止在某种程度上的了解，恋爱却是不停的，是追求。</li>
-<li>法治是人依法而治，社会上人和人的关系是根据法律来维持的，法律还得靠权力来支持，还得靠人来执行。法律是靠政治（国家、部落）的权力来推行的。</li>
-<li>人治并非社会上人和人关系可以不根据什么规定而自行配合的，而应该是礼治。礼是社会公认合式的行为规范，不同于法律。维持礼的是传统。传统是社会所累积的经验。</li>
-<li>法治和人治的区别，不在人和法这两个字上，而是在维持秩序时所用的力量，和所根据的规范的性质。</li>
-<li>横暴权力：冲突过程的持续，是一种休战状态中的临时平衡。是压迫性质的，是上下之别。</li>
-<li>同意权力：对每个人遵守分配的工作的保障。是社会契约，是同意。</li>
-<li>文化是被这会不成问题地加以接受的规范。</li>
-<li>政治是一个社会还没有共同接受一套规范，各种意见纷呈，求取临时解决办法的活动。</li>
-<li>长老统治：从并不征求、也不老考虑孩子同意与否而设下他们必须适应的社会生活方式的一方面说，教化他们的人可以说是不民主的，出现长老统治。并非横暴权力。</li>
-<li>人类行为是有动机的包含着两个意思：一是意志，人类对于自己的行为是可以控制的；二是欲望，人类在取舍之间有所根据。欲望-紧张-动作-满足-愉快，这是人类行为的过程。</li>
-</ol>
+          真是一本很不错的书。
 
-          
+学习：学是和陌生事物的最初接触，习是陶炼。
+学就是在出生之后以一套人为的行为方式作模型，把本能的那一套方式加以改造的过程。
+习是指反复地做作 ，靠时间中的磨练，使一个人惯于一种新的做法。
+礼俗社会：并没有具体目的，只是因为在一起生长而发生的社会。
+法理社会：为了要完成一件任务
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/10/21/23/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2071,12 +1657,146 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zsilence" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Zilence" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
         </div>
 
         
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Math & Coding
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zhiqiang.org/blog/" title="张志强" target="_blank">张志强</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.farmostwood.net/" title="木遥" target="_blank">木遥</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.changhai.org/" title="卢昌海" target="_blank">卢昌海</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.hanyan.me/" title="TooCold" target="_blank">TooCold</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://freemind.pluskid.org/" title="pluskid(张驰原)" target="_blank">pluskid(张驰原)</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://whzecomjm.com/" title="远溯博索" target="_blank">远溯博索</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.geekonomics10000.com/" title="同人于野(万维钢)" target="_blank">同人于野(万维钢)</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://zqyin.wordpress.com/" title="尹璋琦" target="_blank">尹璋琦</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://yihui.name/" title="谢益辉" target="_blank">谢益辉</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.physixfan.com/" title="宇宙的心弦(范翔)" target="_blank">宇宙的心弦(范翔)</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.matrix67.com/blog/" title="Matrix67(顾森)" target="_blank">Matrix67(顾森)</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://localhost-8080.com/" title="考据癖" target="_blank">考据癖</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://mindhacks.cn/" title="刘未鹏" target="_blank">刘未鹏</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://macshuo.com/" title="池建强" target="_blank">池建强</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://dbanotes.net/" title="Fenng(冯大辉)" target="_blank">Fenng(冯大辉)</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ruanyifeng.com/blog/" title="阮一峰" target="_blank">阮一峰</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://shibeichen.com/" title="师北宸" target="_blank">师北宸</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.youxu.info/" title="徐宥" target="_blank">徐宥</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.csdn.net/haoel/" title="陈皓" target="_blank">陈皓</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://coolshell.cn/" title="酷壳" target="_blank">酷壳</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.byvoid.com/zhs/" title="郭家宝" target="_blank">郭家宝</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.chenshuo.com/" title="陈硕" target="_blank">陈硕</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.luanxiang.org/blog/" title="余晟" target="_blank">余晟</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.wangjianshuo.com/" title="王建硕" target="_blank">王建硕</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.yinwang.org/" title="王垠" target="_blank">王垠</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://tumutanzi.com/" title="谭智军" target="_blank">谭智军</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
         
@@ -2100,25 +1820,14 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2016 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">张召</span>
 </div>
 
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
 
 
         
@@ -2181,21 +1890,28 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
 
 
   
-  
 
   
 
-  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -2218,11 +1934,6 @@ document.write('<script type="text/javascript" src="http://disqus.com/forums/nor
     })();
   </script>
 
-  
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
