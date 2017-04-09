@@ -1735,7 +1735,7 @@ pre .javascript .function {
 }
 .site-description {
   margin-top: 0;
-  text-align: center;
+  text-align: top;
   font-size: 13px;
   color: #999;
 }
@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5290ff;
+  background: #ffc120;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2977,4 +2977,9 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.scroll-sidebar {
+  position: relative;
+  top: 0px;
+  margin-top: 0px !important;
 }
